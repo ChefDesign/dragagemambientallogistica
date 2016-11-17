@@ -1,0 +1,27 @@
+//Aqui é o layout do mobile
+#topo {
+	background: #FFC925;
+	width: 100%;
+		.content {
+			img {
+				display: block;
+				width: 200px;
+				margin: 0 auto;
+				padding: 10px;
+			}
+		}
+}
+
+//Aqui é o layout do desktop
+@media(min-width: 620px) {
+	#topo {
+		.content {
+			max-width: 640px;
+			margin: 0 auto;
+
+			img {
+				width: 220px;
+			}
+		}
+	}
+}
