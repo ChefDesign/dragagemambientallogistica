@@ -1,8 +1,10 @@
-.topo{
+header img{
+        display: block;
+        margin: auto;
+    }
 
-	width: 950px;
-	margin: 0px auto auto;
-	background: #fff;	
+.banner {
+text-align: center;
 }
 
 #menu ul {
