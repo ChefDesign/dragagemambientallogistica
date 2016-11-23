@@ -1,10 +1,14 @@
 header img{
-        display: block;
-        margin: auto;
-    }
+	display: block;
+    margin: auto;
+}
 
-.banner {
+#banner {
 text-align: center;
+}
+
+#principal {
+	width:940px;
 }
 
 #menu ul {
@@ -12,12 +16,12 @@ text-align: center;
 	padding: 0;
 	list-style: none;
 	width: 100%;
-	float: left;
 	}
 	
 #menu ul li {
-	float: left; 
-	font: 16px arial;
+	width: 20%;
+    list-style: none;
+    float: left
 }
 
 #menu ul li:hover {
