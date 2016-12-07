@@ -5,6 +5,8 @@
 	}
 	.dois {
 		background-color:rgba(246, 246, 246, 1);
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 21px solid #DEDEDE;
 	}
 
 	.content {
@@ -14,7 +16,7 @@
 		margin-top: -20px;
 		padding-bottom: 20px;
 		margin-bottom: 10px;
-		border-top: 1px solid #DEDEDE;
+
 
 		h1 {
 			color: #05a4e1;
@@ -25,6 +27,24 @@
 			margin-top: 20px;
 
 		}
+
+    hr {
+           height: 30px;
+           border-style: solid;
+           border-color: red;
+           border-width: 1px 0 0 0;
+           border-radius: 20px;
+         }
+         hr:before {
+           display: block;
+           content: "";
+           height: 30px;
+           margin-top: -31px;
+           border-style: solid;
+           border-color: #8c8b8b;
+           border-width: 0 0 1px 0;
+           border-radius: 20px;
+         }
 
 				p {
 					color: #696969;
@@ -44,6 +64,7 @@
 			margin: 0 auto;
 			border-bottom: 55px;
 			border-top: none;
+
 
 			h1 {
 				font-size: @pTamanhoFonteDeskTop;
