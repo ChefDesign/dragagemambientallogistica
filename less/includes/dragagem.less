@@ -1,0 +1,56 @@
+.dragagem {
+
+	.um{
+		background-color:#FFF;
+	}
+	.dois {
+		background-color:rgba(246, 246, 246, 1);
+	}
+
+	.content {
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		margin-top: -20px;
+		padding-bottom: 20px;
+		margin-bottom: 10px;
+		border-top: 1px solid #DEDEDE;
+
+		h1 {
+			color: #05a4e1;
+			text-align: center;
+      font-size: @h1TamanhoFonteMobile;
+			margin-left: 10px;
+			margin-right: 10px;
+			margin-top: 20px;
+
+		}
+
+				p {
+					color: #696969;
+					text-align: center;
+					font-size: @pTamanhoFonteMobile;
+					margin-left: 10px;
+					margin-right: 10px;
+          font-weight: 500;
+
+				}
+			}
+		}
+
+@media(min-width: 600px) {
+		.content {
+			max-width: 620px;
+			margin: 0 auto;
+			border-bottom: 55px;
+			border-top: none;
+
+			h1 {
+				font-size: @pTamanhoFonteDeskTop;
+			}
+
+				p {
+					font-size: @h1TamanhoFonteDeskTop;
+				}
+			}
+		}
