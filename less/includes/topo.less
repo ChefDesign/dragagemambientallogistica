@@ -1,11 +1,8 @@
 //Aqui é o layout do mobile
 //Cor padrão do background #D3D44D
 
-	@cor-padrao: #D3D44D;
-  @cor-degrade: #c0c13a;
-
 #topo {
-	background: @cor-padrao;
+	background: @topoCorFundoBranco;
 	width: 100%;
 		.content {
 			img {
@@ -24,7 +21,7 @@
 		}
 
 		#menu {
-				background: @cor-degrade;
+				background: @menuCorFundoAzul;
  	left: 0;
 	ul {
 		display: block;
@@ -42,7 +39,7 @@
 				text-decoration: none;
 				text-align: center;
         padding: 8px 8px;
-			  color: #443937;
+			  color: @menuCorTextoBranco;
 			  font-size: 14px;
 			}
       a:hover {
@@ -60,7 +57,7 @@
     width: 100%;
    	left: 0;
   	background: #222;
-    margin-top: -145px;
+    margin-top: -144px;
     z-index: 50;
     opacity: 0.9;
 }
@@ -84,6 +81,10 @@
 				max-width: 640px
 			}
 
+		}
+
+		.fixar {
+		    margin-top: -158px;
 		}
 	}
 }
