@@ -50,7 +50,7 @@
 					text-decoration: none;
 					padding: 5px 10px;
 					color: #fff;
-					background-color: @botaoCorVerde;
+					background-color: @botaoCorAzul;
 
 				}
 
@@ -68,20 +68,30 @@
 	}
 
 @media(min-width: 600px) {
+	.dragagem {
+
 		.content {
+			height: auto;
 			max-width: 620px;
 			margin: 0 auto;
 			border-bottom: 55px;
 			border-top: none;
-
+			margin-top: -20px;
+			margin-bottom: 20px;
 
 			h1 {
-				color: red;
 				font-size: @h1TamanhoFonteDeskTop;
 			}
 
 				p {
 					font-size: @pTamanhoFonteDeskTop;
 				}
+
+				ul {
+					li {
+					font-size: @pTamanhoFonteDeskTop;
+				 }
+			 }
 			}
 		}
+	}
