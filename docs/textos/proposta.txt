@@ -1,0 +1,16 @@
+Criação da Página de Propostas
+
+Como um usuário interessado em fazer uma proposta
+Eu gostaria de entrar em contato com a empresa
+Para solicitar um orçamento
+
+
+CT01 - Ter os contatos da empresa no rodapé, igual ao site da Camila
+CT02 - Ter um formulário com placeholder nos inputs que permita enviar o nome, email e telefone.
+CT03 - O botão do formulário tem que ter o texto Solicitar Proposta
+CT04 - Adicionar as midias sociais, igual ao site da Camila
+
+Telefone: 15-3302-5477
+Celular: 15-99612-8012
+Email: contato@dragagemambientallogistica.com.br
+Endereço da empresa: Av. Itavuvu 4510, St Celilia - Sorocaba-SP
