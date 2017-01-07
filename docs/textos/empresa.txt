@@ -1,0 +1,32 @@
+Criação da página da empresa
+
+Como um comprador que está buscando empresas no seguimento de limpezas de lagos
+Gostaria de saber mais sobre a empresa
+Para poder justificar a escolha da empresa
+
+CT01 - Ter a história da empresa
+CT02 - Ter a missão da empresa
+CT03 - Ter a visão da empresa
+CT05 - Ter os valores da empresa
+CT06 - Ter midias sociais
+CT07 - Ter Rodapé com contatos
+
+
+A Ambiental Logística é uma empresa prestadora de serviços que atua no segmento de 
+engenharia, saneamento e meio ambiente.
+Mais do que ser uma prestadora de serviço, a gente sabe que exerce um papel importante para o futuro do nosso planeta.
+
+Comprometida
+Busca sempre realizar os serviços dentro dos prazos acordados e de forma ética.
+
+Criativa
+Identifica as melhores soluções através de debates e respostas criativas.
+
+Excelência
+Trabalha com qualidade e atinge objetivos com rapidez, menores custos ou melhores resultados, indo além das expectativas.
+
+Apaixonada
+Faz a diferença para o cliente, priorizando suas necessidades.
+
+Converse com agente, estamos esperando o seu contato:
+Colocar um botão de call to action que vai cair na página de propostas.
