@@ -9,6 +9,9 @@ CT01 - Ter os contatos da empresa no rodapé, igual ao site da Camila
 CT02 - Ter um formulário com placeholder nos inputs que permita enviar o nome, email e telefone.
 CT03 - O botão do formulário tem que ter o texto Solicitar Proposta
 CT04 - Adicionar as midias sociais, igual ao site da Camila
+CT05 - Adicionar o mapa
+CT06 - Ter o endereço da empresa independente do mapa
+CT07 - No formulario ter uma opção para ele selecionar como ele prefere o contato, por e-mail, telefone ou watts
 
 Telefone: 15-3302-5477
 Celular: 15-99612-8012
