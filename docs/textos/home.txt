@@ -1,3 +1,30 @@
+﻿Criação da página da home
+
+Como um gerente de compras 
+Gostaria de encotrar um empresa que fizesse serviço de limpeza de lagoas 
+Para fazer um orçamento de uma lagoa da empresa que está suja com residuos industriais
+
+CT01 - Ter o logo da empresa 
+CT01 - Ter o slogam da empresa "Sua preocupação, nossa responsabilidade."
+CT03 - Ter um menu com os itens Home, Empresa, Serviços, Propostas
+CT04 - Ter um botão para solicitar orçamento online
+CT05 - Links de redes sociais - facebook, instagram, pinterest, g+
+CT06 - Rodapé com contatos, pegar os dados de contatos no arquivo contatos
+CT07 - Exibir na home alguns de nossos clientes com base nas logos(jpg) das empresas
+CT07 - Ter os conteúdos abaixo adicionado na página
+
+-----------------------------------------------------------------------------------------
+
+Obs: A empresa do cliente não é grande, ele possui uma draga de sucção e uma retro escavadeira, acho que essa informação é importante.
+O faturamento desse cliente era alto antes da crise, com a crise ele perdeu muito dos seus clientes.
+
+Como vou ajudar esse cliente:
+Vou trabalhar em anúncios no Google pagos e também em SEO para captar clientes e fazer eles preencher o formulário de orçamento.
+
+Descrições das ideias que tive para adcionar na home:
+
+Seu lago está com lodo
+
 Dragagem e Dessassoreamento
 Oferecemos as melhores soluções de desassoreamento usando o método de dragagem, com dragas de sucção de alta performance.
 
@@ -5,17 +32,10 @@ Nossos serviços
 Executamos obras e serviços de dragagem e desassoreamento de lago, lagoa, rio, tanque, canal e represas em todo o Brasil.
 
 Nosso diferencial
-- Descarte ecologicamente correto dos materiais contaminados.
+- Descarte ecologicamente correto dos materiais contaminados e não contaminados.
 - Dragas de alta performance.
 - Engenheiros e técnicos qualificados.
 - Obras finalizadas dentro do prazo acordado.
-Temos as melhores dragas de sucção e garantimos a melhor proposta de limpeza de rios, lagoas tanques e represas.
 
----
 
-Observações
-- Adicionar slogan "Sua preocupação, nossa responsabilidade."
-- Adicionar botão "Solicitar um orçamento online"
-- Adicionar logo "Nossos clientes" - 9 logos
-- Adicionar link para redes sociais - facebook, instagram, pinterest, g+
-- Adicionar contatos rápidos
+Temos as melhores dragas de sucção e a melhor proposta! Solicitar Orçamento Online.
