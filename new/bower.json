@@ -1,0 +1,10 @@
+{
+  "name": "project-starter-less",
+  "description": "project starter with less",
+  "main": "",
+  "authors": [
+    "denis toledo"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/dnstld/project-starter-less"
+}
