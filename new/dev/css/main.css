@@ -134,6 +134,178 @@ table {
   font-weight: normal;
   font-style: normal;
 }
+/**
+ * tablet
+ * @description tablet breakpoint 768px
+ */
+/**
+ * tablet
+ * @description tablet breakpoint 992px
+ */
+/**
+ * tablet
+ * @description tablet breakpoint 1200px
+ */
+/**
+ * box-sizing
+ * @description the box-sizing property
+ */
 body {
   color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+body > .full {
+  width: 100%;
+}
+body > .full.navigation {
+  background-color: #333;
+}
+nav {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1000px;
+  height: 50px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+nav > ul {
+  float: left;
+}
+nav > ul > li {
+  float: left;
+}
+nav > ul > li > a {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+  margin-right: 1px;
+  border-bottom: 2px solid transparent;
+}
+nav > ul > li > a:hover {
+  border-color: #76b53c;
+}
+nav > ul > li > a.active {
+  color: #76b53c;
+  cursor: default;
+  border-style: none;
+}
+nav > aside {
+  display: none;
+}
+@media (min-width: 48em) {
+  nav > aside {
+    display: block;
+  }
+}
+nav > aside > ul {
+  float: right;
+}
+nav > aside > ul > li {
+  float: left;
+}
+nav > aside > ul > li > a {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  float: left;
+  color: #fff;
+}
+nav > aside > ul > li > a:hover {
+  color: #76b53c;
+}
+nav > aside > ul > li > a.facebook::before {
+  content: "\e901";
+}
+nav > aside > ul > li > a.facebook::before {
+  font-family: 'dragagem-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16;
+  text-align: center;
+  vertical-align: middle;
+}
+nav > aside > ul > li > a.instagram::before {
+  content: "\e903";
+}
+nav > aside > ul > li > a.instagram::before {
+  font-family: 'dragagem-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16;
+  text-align: center;
+  vertical-align: middle;
+}
+nav > aside > ul > li > a.pinterest::before {
+  content: "\e907";
+}
+nav > aside > ul > li > a.pinterest::before {
+  font-family: 'dragagem-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16;
+  text-align: center;
+  vertical-align: middle;
+}
+nav > aside > ul > li > a.google-plus::before {
+  content: "\e902";
+}
+nav > aside > ul > li > a.google-plus::before {
+  font-family: 'dragagem-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+nav > aside > ul > li > a.youtube::before {
+  content: "\e90d";
+}
+nav > aside > ul > li > a.youtube::before {
+  font-family: 'dragagem-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16;
+  text-align: center;
+  vertical-align: middle;
 }

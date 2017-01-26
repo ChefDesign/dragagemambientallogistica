@@ -1,0 +1,36 @@
+/**
+ * tablet
+ * @description tablet breakpoint 768px
+ */
+.tablet(@rules) {
+  @media (min-width: 48em) {
+  	@rules();
+  }
+}
+/**
+ * tablet
+ * @description tablet breakpoint 992px
+ */
+.desktop(@rules) {
+  @media (min-width: 62em) {
+  	@rules();
+  }
+}
+/**
+ * tablet
+ * @description tablet breakpoint 1200px
+ */
+.huge(@rules) {
+  @media (min-width: 75em) {
+  	@rules();
+  }
+}
+/**
+ * box-sizing
+ * @description the box-sizing property
+ */
+.box-sizing(@type: border-box) {
+	-webkit-box-sizing: @type;
+	-moz-box-sizing:    @type;
+	box-sizing:         @type;
+}
