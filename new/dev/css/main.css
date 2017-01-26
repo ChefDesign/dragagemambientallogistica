@@ -150,6 +150,15 @@ table {
  * box-sizing
  * @description the box-sizing property
  */
+/**
+ * clearfix
+ * @description the box-sizing property
+ */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 body {
   color: #333;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -160,6 +169,9 @@ body > .full {
 }
 body > .full.navigation {
   background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 nav {
   -webkit-box-sizing: border-box;
@@ -194,6 +206,12 @@ nav > ul > li > a {
   padding: 0 5px;
   margin-right: 1px;
   border-bottom: 2px solid transparent;
+}
+@media (min-width: 48em) {
+  nav > ul > li > a {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
 nav > ul > li > a:hover {
   border-color: #76b53c;
@@ -313,4 +331,108 @@ nav > aside > ul > li > a.youtube::before {
   font-size: 16;
   text-align: center;
   vertical-align: middle;
+}
+header {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+header > .content {
+  margin: 20px;
+}
+header > .content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+header > .content > img {
+  float: left;
+  height: 70px;
+}
+@media (min-width: 48em) {
+  header > .content > img {
+    height: 90px;
+  }
+}
+header > .content > .slogan {
+  display: table;
+  float: left;
+  height: 70px;
+  margin-left: 20px;
+}
+@media (min-width: 48em) {
+  header > .content > .slogan {
+    float: right;
+    height: 90px;
+  }
+}
+header > .content > .slogan > h1 {
+  white-space: nowrap;
+  font-size: 16px;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  display: table-cell;
+}
+@media (min-width: 48em) {
+  header > .content > .slogan > h1 {
+    font-size: 26px;
+    text-align: right;
+  }
+}
+header > .content > .contact {
+  display: none;
+}
+@media (min-width: 48em) {
+  header > .content > .contact {
+    display: table;
+    float: right;
+    height: 90px;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid #333;
+  }
+  header > .content > .contact > .container {
+    vertical-align: middle;
+    display: table-cell;
+  }
+  header > .content > .contact > .container > .phone {
+    margin: 10px 0;
+  }
+  header > .content > .contact > .container > .phone > .icon {
+    margin-right: 5px;
+  }
+  header > .content > .contact > .container > .phone.main > .icon::before {
+    content: "\e906";
+  }
+  header > .content > .contact > .container > .phone.main > .icon::before {
+    font-family: 'dragagem-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16;
+    text-align: center;
+    vertical-align: middle;
+  }
+  header > .content > .contact > .container > .phone.mobile > .icon::before {
+    content: "\e909";
+  }
+  header > .content > .contact > .container > .phone.mobile > .icon::before {
+    font-family: 'dragagem-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16;
+    text-align: center;
+    vertical-align: middle;
+  }
 }

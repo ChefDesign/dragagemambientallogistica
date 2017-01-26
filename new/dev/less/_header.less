@@ -1,0 +1,77 @@
+header {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-top: 50px; // navigation
+
+	> .content {
+		.clearfix();
+		margin: 20px;
+
+		> img {
+			float: left;
+			height: 70px;
+
+			.tablet({
+				height: 90px;
+			});
+		}
+		> .slogan {
+			display: table;
+			float: left;
+			height: 70px;
+			margin-left: 20px;
+
+			.tablet({
+				float: right;
+				height: 90px;
+			});
+			> h1 {
+	  		white-space: nowrap;
+	  		font-size: 16px;
+	  		letter-spacing: 1px;
+	  		vertical-align:middle;
+  			display: table-cell;
+
+	  		.tablet({
+					font-size: 26px;
+					text-align: right;
+				});
+			}
+		}
+		> .contact {
+			display: none;
+
+			.tablet({
+				display: table;
+				float: right;
+				height: 90px;
+				margin-left: 20px;
+				padding-left: 20px;
+				border-left: 1px solid @color-dark;
+
+				> .container {
+					vertical-align:middle;
+  				display: table-cell;
+
+					> .phone {
+						margin: 10px 0;
+
+						> .icon {
+							margin-right: 5px;
+						}
+						&.main {
+							> .icon {
+								.icon(@icon-phone);
+							}
+						}
+						&.mobile {
+							> .icon {
+								.icon(@icon-smartphone);
+							}
+						}
+					}
+				}
+			});
+		}
+	}
+}

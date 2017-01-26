@@ -34,3 +34,14 @@
 	-moz-box-sizing:    @type;
 	box-sizing:         @type;
 }
+/**
+ * clearfix
+ * @description the box-sizing property
+ */
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
