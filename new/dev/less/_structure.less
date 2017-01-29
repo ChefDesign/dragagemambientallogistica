@@ -14,12 +14,17 @@ body {
 			z-index: 2;
 		}
 		&.orcamento {
-			background-color: #f2f2f2;
-			border-top: 1px solid #ccc;
-			border-bottom: 1px solid #ccc;
+			.tablet({
+				background-color: #f2f2f2;
+				border-top: 1px solid #ccc;
+				border-bottom: 1px solid #ccc;
+			});
 		}
 		&.video {
 			background-color: #e6f7da;
+		}
+		&.contatos {
+			background-color: #cee6bf;
 		}
 	}
 
