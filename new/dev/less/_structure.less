@@ -14,4 +14,21 @@ body {
 			z-index: 2;
 		}
 	}
+
+	// generic
+	.hidden {
+		visibility: hidden;
+	}
+	.hideMobile {
+		display: none;
+
+		.tablet({
+			display: block;
+		})
+	}
+	.hideTablet {
+		.tablet({
+			display: none;
+		});
+	}
 }
