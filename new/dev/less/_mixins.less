@@ -54,3 +54,22 @@
     clear: both;
   }
 }
+/**
+ * button
+ * @description the box-sizing property
+ */
+.button(@bg-color: @color-secondary, @color: #fff) {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  padding: 0 20px;
+  text-align: center;
+  text-decoration: none;
+  color: @color;
+  background-color: @bg-color;
+
+  &:hover {
+    background-color: mix(@bg-color, #000, 90%);
+  };
+}
