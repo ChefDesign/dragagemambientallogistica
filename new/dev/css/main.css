@@ -231,21 +231,16 @@ nav > ul > li > a.active {
   cursor: default;
   border-style: none;
 }
-nav > aside {
+nav > .social {
   display: none;
 }
 @media (min-width: 48em) {
-  nav > aside {
-    display: block;
+  nav > .social {
+    display: inline-block;
+    float: right;
   }
 }
-nav > aside > ul {
-  float: right;
-}
-nav > aside > ul > li {
-  float: left;
-}
-nav > aside > ul > li > a {
+nav > .social > ul > li > a {
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -254,13 +249,13 @@ nav > aside > ul > li > a {
   float: left;
   color: #fff;
 }
-nav > aside > ul > li > a:hover {
+nav > .social > ul > li > a:hover {
   color: #76b53c;
 }
-nav > aside > ul > li > a.facebook::before {
+nav > .social > ul > li > a.facebook::before {
   content: "\e901";
 }
-nav > aside > ul > li > a.facebook::before {
+nav > .social > ul > li > a.facebook::before {
   font-family: 'dragagem-icons' !important;
   speak: none;
   font-style: normal;
@@ -274,10 +269,10 @@ nav > aside > ul > li > a.facebook::before {
   text-align: center;
   vertical-align: middle;
 }
-nav > aside > ul > li > a.instagram::before {
+nav > .social > ul > li > a.instagram::before {
   content: "\e903";
 }
-nav > aside > ul > li > a.instagram::before {
+nav > .social > ul > li > a.instagram::before {
   font-family: 'dragagem-icons' !important;
   speak: none;
   font-style: normal;
@@ -291,10 +286,10 @@ nav > aside > ul > li > a.instagram::before {
   text-align: center;
   vertical-align: middle;
 }
-nav > aside > ul > li > a.pinterest::before {
+nav > .social > ul > li > a.pinterest::before {
   content: "\e907";
 }
-nav > aside > ul > li > a.pinterest::before {
+nav > .social > ul > li > a.pinterest::before {
   font-family: 'dragagem-icons' !important;
   speak: none;
   font-style: normal;
@@ -308,10 +303,10 @@ nav > aside > ul > li > a.pinterest::before {
   text-align: center;
   vertical-align: middle;
 }
-nav > aside > ul > li > a.google-plus::before {
+nav > .social > ul > li > a.google-plus::before {
   content: "\e902";
 }
-nav > aside > ul > li > a.google-plus::before {
+nav > .social > ul > li > a.google-plus::before {
   font-family: 'dragagem-icons' !important;
   speak: none;
   font-style: normal;
@@ -325,10 +320,10 @@ nav > aside > ul > li > a.google-plus::before {
   text-align: center;
   vertical-align: middle;
 }
-nav > aside > ul > li > a.youtube::before {
+nav > .social > ul > li > a.youtube::before {
   content: "\e90d";
 }
-nav > aside > ul > li > a.youtube::before {
+nav > .social > ul > li > a.youtube::before {
   font-family: 'dragagem-icons' !important;
   speak: none;
   font-style: normal;
@@ -465,4 +460,119 @@ header > .content > .contact {
     text-align: center;
     vertical-align: middle;
   }
+}
+.social {
+  text-align: center;
+}
+.social:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 48em) {
+  .social {
+    display: none;
+  }
+}
+.social > ul {
+  display: inline-block;
+}
+.social > ul > li {
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+.social > ul > li > a {
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+.social > ul > li > a:hover {
+  color: #76b53c;
+}
+.social > ul > li > a.facebook::before {
+  content: "\e901";
+}
+.social > ul > li > a.facebook::before {
+  font-family: 'dragagem-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16;
+  text-align: center;
+  vertical-align: middle;
+}
+.social > ul > li > a.instagram::before {
+  content: "\e903";
+}
+.social > ul > li > a.instagram::before {
+  font-family: 'dragagem-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16;
+  text-align: center;
+  vertical-align: middle;
+}
+.social > ul > li > a.pinterest::before {
+  content: "\e907";
+}
+.social > ul > li > a.pinterest::before {
+  font-family: 'dragagem-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16;
+  text-align: center;
+  vertical-align: middle;
+}
+.social > ul > li > a.google-plus::before {
+  content: "\e902";
+}
+.social > ul > li > a.google-plus::before {
+  font-family: 'dragagem-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+.social > ul > li > a.youtube::before {
+  content: "\e90d";
+}
+.social > ul > li > a.youtube::before {
+  font-family: 'dragagem-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16;
+  text-align: center;
+  vertical-align: middle;
 }
