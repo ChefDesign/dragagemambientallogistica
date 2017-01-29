@@ -187,6 +187,9 @@ body > .full.orcamento {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
+body > .full.video {
+  background-color: #e6f7da;
+}
 body .hidden {
   visibility: hidden;
 }
@@ -968,4 +971,53 @@ header > .content > .contact {
 }
 .orcamento > a:hover {
   background-color: #6aa336;
+}
+.video {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+@media (min-width: 48em) {
+  .video {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
+@media (min-width: 62em) {
+  .video {
+    padding: 40px 150px;
+  }
+}
+.video > h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+@media (min-width: 62em) {
+  .video > h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 75em) {
+  .video > h3 {
+    font-size: 36px;
+  }
+}
+.video > .youtube {
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 56.25%;
+}
+.video > .youtube > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
