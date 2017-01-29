@@ -7,10 +7,16 @@ header {
 		.clearfix();
 		margin: 20px;
 
+		.desktop({
+			margin: 40px;
+		});
 		> img {
 			float: left;
-			height: 70px;
+			height: 60px;
 
+			.mobile-landscape({
+				height: 75px;
+			});
 			.tablet({
 				height: 90px;
 			});
@@ -18,20 +24,26 @@ header {
 		> .slogan {
 			display: table;
 			float: left;
-			height: 70px;
+			height: 60px;
 			margin-left: 20px;
 
+			.mobile-landscape({
+				height: 75px;
+			});
 			.tablet({
 				float: right;
 				height: 90px;
 			});
 			> h1 {
 	  		white-space: nowrap;
-	  		font-size: 16px;
+	  		font-size: 13px;
 	  		letter-spacing: 1px;
 	  		vertical-align:middle;
   			display: table-cell;
 
+  			.mobile-landscape({
+					font-size: 18px;
+				});
 	  		.tablet({
 					font-size: 26px;
 					text-align: right;

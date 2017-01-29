@@ -1,4 +1,13 @@
 /**
+ * mobile-landscape
+ * @description mobile-landscape breakpoint 480px
+ */
+.mobile-landscape(@rules) {
+  @media (min-width: 30em) {
+    @rules();
+  }
+}
+/**
  * tablet
  * @description tablet breakpoint 768px
  */

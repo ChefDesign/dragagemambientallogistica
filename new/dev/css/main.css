@@ -135,6 +135,10 @@ table {
   font-style: normal;
 }
 /**
+ * mobile-landscape
+ * @description mobile-landscape breakpoint 480px
+ */
+/**
  * tablet
  * @description tablet breakpoint 768px
  */
@@ -182,6 +186,12 @@ nav {
   height: 50px;
   padding: 0 10px;
   margin: 0 auto;
+}
+@media (min-width: 62em) {
+  nav {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 nav > img {
   height: 30px;
@@ -345,9 +355,19 @@ header > .content:after {
   display: table;
   clear: both;
 }
+@media (min-width: 62em) {
+  header > .content {
+    margin: 40px;
+  }
+}
 header > .content > img {
   float: left;
-  height: 70px;
+  height: 60px;
+}
+@media (min-width: 30em) {
+  header > .content > img {
+    height: 75px;
+  }
 }
 @media (min-width: 48em) {
   header > .content > img {
@@ -357,8 +377,13 @@ header > .content > img {
 header > .content > .slogan {
   display: table;
   float: left;
-  height: 70px;
+  height: 60px;
   margin-left: 20px;
+}
+@media (min-width: 30em) {
+  header > .content > .slogan {
+    height: 75px;
+  }
 }
 @media (min-width: 48em) {
   header > .content > .slogan {
@@ -368,10 +393,15 @@ header > .content > .slogan {
 }
 header > .content > .slogan > h1 {
   white-space: nowrap;
-  font-size: 16px;
+  font-size: 13px;
   letter-spacing: 1px;
   vertical-align: middle;
   display: table-cell;
+}
+@media (min-width: 30em) {
+  header > .content > .slogan > h1 {
+    font-size: 18px;
+  }
 }
 @media (min-width: 48em) {
   header > .content > .slogan > h1 {
