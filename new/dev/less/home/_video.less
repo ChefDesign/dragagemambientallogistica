@@ -1,42 +1,44 @@
 .video {
-	.box-sizing();
-	width: 100%;
-	text-align: center;
-	padding: 10px;
+	> section {
+		.box-sizing();
+		max-width: 75%;
+		text-align: center;
+		padding: 10px;
+		margin: 0 auto;
 
-	.tablet({
-		padding-right: 100px;
-		padding-left: 100px;
-	});
-	.desktop({
-		padding: 40px 150px;
-	});
-	> h3 {
-		font-size: 18px;
-		font-weight: bold;
-		margin-bottom: 10px;
-
+		.tablet({
+			padding: 20px;
+		});
 		.desktop({
-			font-size: 24px;
-			margin-bottom: 20px;
+			padding: 40px;
 		});
 		.huge({
-			font-size: 36px;
+			max-width: 60%;
 		});
-	}
-	> .youtube {
-		width: 100%;
-		height: 0;
-		position: relative;
-		padding-top: 10px;
-		padding-bottom: 56.25%; // 16:9
+		> h3 {
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 10px;
 
-		> iframe {
-			position: absolute;
-			top: 0;
-			left: 0;
+			.desktop({
+				font-size: 24px;
+				margin-bottom: 20px;
+			});
+		}
+		> .youtube {
 			width: 100%;
-			height: 100%;
+			height: 0;
+			position: relative;
+			padding-top: 10px;
+			padding-bottom: 56.25%; // 16:9
+
+			> iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
 		}
 	}
 }

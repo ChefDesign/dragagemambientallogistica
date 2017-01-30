@@ -177,10 +177,6 @@ body > .full {
 }
 body > .full.navigation {
   background-color: #333;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
 }
 @media (min-width: 48em) {
   body > .full.orcamento {
@@ -209,6 +205,149 @@ body .hideMobile {
 @media (min-width: 48em) {
   body .hideTablet {
     display: none;
+  }
+}
+.header {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.header > .content {
+  margin: 20px;
+}
+.header > .content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 62em) {
+  .header > .content {
+    margin: 40px;
+  }
+}
+.header > .content > img {
+  float: left;
+  height: 60px;
+}
+@media (min-width: 30em) {
+  .header > .content > img {
+    height: 75px;
+  }
+}
+@media (min-width: 48em) {
+  .header > .content > img {
+    height: 90px;
+  }
+}
+@media (min-width: 62em) {
+  .header > .content > img {
+    height: 120px;
+  }
+}
+.header > .content > .slogan {
+  display: table;
+  float: left;
+  height: 60px;
+  margin-left: 20px;
+}
+@media (min-width: 30em) {
+  .header > .content > .slogan {
+    height: 75px;
+  }
+}
+@media (min-width: 48em) {
+  .header > .content > .slogan {
+    float: right;
+    height: 90px;
+  }
+}
+@media (min-width: 62em) {
+  .header > .content > .slogan {
+    height: 120px;
+  }
+}
+.header > .content > .slogan > h1 {
+  white-space: nowrap;
+  font-size: 13px;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  display: table-cell;
+}
+@media (min-width: 30em) {
+  .header > .content > .slogan > h1 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 48em) {
+  .header > .content > .slogan > h1 {
+    font-size: 26px;
+    text-align: right;
+  }
+}
+@media (min-width: 62em) {
+  .header > .content > .slogan > h1 {
+    font-size: 32px;
+  }
+}
+.header > .content > .contact {
+  display: none;
+}
+@media (min-width: 48em) {
+  .header > .content > .contact {
+    display: table;
+    float: right;
+    height: 90px;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid #333;
+  }
+  .header > .content > .contact > .container {
+    vertical-align: middle;
+    display: table-cell;
+  }
+  .header > .content > .contact > .container > .phone {
+    margin: 10px 0;
+  }
+  .header > .content > .contact > .container > .phone > .icon {
+    margin-right: 5px;
+  }
+  .header > .content > .contact > .container > .phone.main > .icon::before {
+    content: "\e906";
+  }
+  .header > .content > .contact > .container > .phone.main > .icon::before {
+    font-family: 'dragagem-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .header > .content > .contact > .container > .phone.mobile > .icon::before {
+    content: "\e909";
+  }
+  .header > .content > .contact > .container > .phone.mobile > .icon::before {
+    font-family: 'dragagem-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+@media (min-width: 62em) {
+  .header > .content > .contact {
+    height: 120px;
   }
 }
 nav {
@@ -371,148 +510,134 @@ nav > .social > ul > li > a.youtube::before {
   text-align: center;
   vertical-align: middle;
 }
-.header {
+.cover {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  padding-top: 50px;
+  padding: 0 10px;
+  text-align: center;
 }
-.header > .content {
-  margin: 20px;
+@media (min-width: 48em) {
+  .cover {
+    padding-top: 20px;
+  }
 }
-.header > .content:after {
+@media (min-width: 62em) {
+  .cover {
+    padding-top: 40px;
+  }
+}
+.cover > .border {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+}
+.cover > .border > .banner {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.cover > .border > .banner:after {
   content: "";
-  display: table;
-  clear: both;
-}
-@media (min-width: 62em) {
-  .header > .content {
-    margin: 40px;
-  }
-}
-.header > .content > img {
+  display: block;
   float: left;
-  height: 60px;
+  padding-top: 47.361%;
 }
-@media (min-width: 30em) {
-  .header > .content > img {
-    height: 75px;
-  }
+.cover > .border > .banner:before {
+  content: "";
+  display: block;
+  background-image: url(../../assets/images/draga-succao-para-dragagem-e-desassoreamento.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.cover > .border > .banner > .info {
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
 }
 @media (min-width: 48em) {
-  .header > .content > img {
-    height: 90px;
+  .cover > .border > .banner > .info {
+    padding: 20px;
   }
 }
-@media (min-width: 62em) {
-  .header > .content > img {
-    height: 120px;
+@media (min-width: 75em) {
+  .cover > .border > .banner > .info {
+    padding: 40px;
   }
 }
-.header > .content > .slogan {
-  display: table;
-  float: left;
-  height: 60px;
-  margin-left: 20px;
-}
-@media (min-width: 30em) {
-  .header > .content > .slogan {
-    height: 75px;
-  }
-}
-@media (min-width: 48em) {
-  .header > .content > .slogan {
-    float: right;
-    height: 90px;
-  }
-}
-@media (min-width: 62em) {
-  .header > .content > .slogan {
-    height: 120px;
-  }
-}
-.header > .content > .slogan > h1 {
+.cover > .border > .banner > .info > h2 {
+  color: #fff;
   white-space: nowrap;
-  font-size: 13px;
-  letter-spacing: 1px;
-  vertical-align: middle;
-  display: table-cell;
+  margin-bottom: 10px;
 }
 @media (min-width: 30em) {
-  .header > .content > .slogan > h1 {
+  .cover > .border > .banner > .info > h2 {
     font-size: 18px;
   }
 }
 @media (min-width: 48em) {
-  .header > .content > .slogan > h1 {
-    font-size: 26px;
-    text-align: right;
+  .cover > .border > .banner > .info > h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 62em) {
-  .header > .content > .slogan > h1 {
-    font-size: 32px;
+  .cover > .border > .banner > .info > h2 {
+    font-size: 30px;
   }
 }
-.header > .content > .contact {
-  display: none;
+.cover > .border > .banner > .info > h2 > span {
+  display: inline-block;
+  margin: 0 5px;
+  color: #f9f1d7;
 }
-@media (min-width: 48em) {
-  .header > .content > .contact {
-    display: table;
-    float: right;
-    height: 90px;
-    margin-left: 20px;
-    padding-left: 20px;
-    border-left: 1px solid #333;
-  }
-  .header > .content > .contact > .container {
-    vertical-align: middle;
-    display: table-cell;
-  }
-  .header > .content > .contact > .container > .phone {
-    margin: 10px 0;
-  }
-  .header > .content > .contact > .container > .phone > .icon {
-    margin-right: 5px;
-  }
-  .header > .content > .contact > .container > .phone.main > .icon::before {
-    content: "\e906";
-  }
-  .header > .content > .contact > .container > .phone.main > .icon::before {
-    font-family: 'dragagem-icons' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 16;
-    text-align: center;
-    vertical-align: middle;
-  }
-  .header > .content > .contact > .container > .phone.mobile > .icon::before {
-    content: "\e909";
-  }
-  .header > .content > .contact > .container > .phone.mobile > .icon::before {
-    font-family: 'dragagem-icons' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 16;
-    text-align: center;
-    vertical-align: middle;
-  }
+.cover > .border > .banner > .info > h2 > span::before {
+  content: "\e90a";
+}
+.cover > .border > .banner > .info > h2 > span::before {
+  font-family: 'dragagem-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16;
+  text-align: center;
+  vertical-align: middle;
+}
+.cover > .border > .banner > .info > a {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  padding: 0 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  background-color: #f9f1d7;
+}
+.cover > .border > .banner > .info > a:hover {
+  background-color: #e0d9c2;
 }
 @media (min-width: 62em) {
-  .header > .content > .contact {
-    height: 120px;
+  .cover > .border > .banner > .info > a {
+    margin-top: 20px;
   }
 }
 .social {
@@ -629,124 +754,6 @@ nav > .social > ul > li > a.youtube::before {
   font-size: 16;
   text-align: center;
   vertical-align: middle;
-}
-.cover {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 10px;
-  text-align: center;
-}
-.cover > .border {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  position: relative;
-}
-.cover > .border > .banner {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-.cover > .border > .banner:after {
-  content: "";
-  display: block;
-  float: left;
-  padding-top: 47.361%;
-}
-.cover > .border > .banner:before {
-  content: "";
-  display: block;
-  background-image: url(../../assets/images/draga-succao-para-dragagem-e-desassoreamento.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.cover > .border > .banner > .info {
-  width: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-}
-@media (min-width: 62em) {
-  .cover > .border > .banner > .info {
-    padding: 20px;
-  }
-}
-@media (min-width: 75em) {
-  .cover > .border > .banner > .info {
-    padding: 40px;
-  }
-}
-.cover > .border > .banner > .info > h2 {
-  color: #fff;
-  white-space: nowrap;
-}
-@media (min-width: 30em) {
-  .cover > .border > .banner > .info > h2 {
-    font-size: 18px;
-  }
-}
-@media (min-width: 48em) {
-  .cover > .border > .banner > .info > h2 {
-    font-size: 24px;
-  }
-}
-@media (min-width: 62em) {
-  .cover > .border > .banner > .info > h2 {
-    font-size: 30px;
-  }
-}
-.cover > .border > .banner > .info > h2 > span {
-  display: inline-block;
-  margin: 10px;
-  color: #f9f1d7;
-}
-.cover > .border > .banner > .info > h2 > span::before {
-  content: "\e90a";
-}
-.cover > .border > .banner > .info > h2 > span::before {
-  font-family: 'dragagem-icons' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 16;
-  text-align: center;
-  vertical-align: middle;
-}
-.cover > .border > .banner > .info > a {
-  display: inline-block;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 15px;
-  padding: 0 20px;
-  text-align: center;
-  text-decoration: none;
-  color: #333;
-  background-color: #f9f1d7;
-}
-.cover > .border > .banner > .info > a:hover {
-  background-color: #e0d9c2;
-}
-@media (min-width: 62em) {
-  .cover > .border > .banner > .info > a {
-    margin-top: 20px;
-  }
 }
 .info {
   -webkit-box-sizing: border-box;
@@ -970,11 +977,6 @@ nav > .social > ul > li > a.youtube::before {
     margin-bottom: 20px;
   }
 }
-@media (min-width: 75em) {
-  .orcamento > section > h3 {
-    font-size: 36px;
-  }
-}
 .orcamento > section > a {
   display: inline-block;
   height: 30px;
@@ -989,49 +991,49 @@ nav > .social > ul > li > a.youtube::before {
 .orcamento > section > a:hover {
   background-color: #6aa336;
 }
-.video {
+.video > section {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 100%;
+  max-width: 75%;
   text-align: center;
   padding: 10px;
+  margin: 0 auto;
 }
 @media (min-width: 48em) {
-  .video {
-    padding-right: 100px;
-    padding-left: 100px;
+  .video > section {
+    padding: 20px;
   }
 }
 @media (min-width: 62em) {
-  .video {
-    padding: 40px 150px;
+  .video > section {
+    padding: 40px;
   }
 }
-.video > h3 {
+@media (min-width: 75em) {
+  .video > section {
+    max-width: 60%;
+  }
+}
+.video > section > h3 {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 @media (min-width: 62em) {
-  .video > h3 {
+  .video > section > h3 {
     font-size: 24px;
     margin-bottom: 20px;
   }
 }
-@media (min-width: 75em) {
-  .video > h3 {
-    font-size: 36px;
-  }
-}
-.video > .youtube {
+.video > section > .youtube {
   width: 100%;
   height: 0;
   position: relative;
   padding-top: 10px;
   padding-bottom: 56.25%;
 }
-.video > .youtube > iframe {
+.video > section > .youtube > iframe {
   position: absolute;
   top: 0;
   left: 0;
