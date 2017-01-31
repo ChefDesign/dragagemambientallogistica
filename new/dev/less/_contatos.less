@@ -99,6 +99,9 @@
 							text-decoration: none;
 							color: @color-dark;
 
+							&:hover {
+								text-decoration: underline;
+							}
 							.mobile-landscape({
 								font-size: 14px;
 							});
@@ -111,17 +114,8 @@
 			display: none;
 
 			.desktop({
-				display: block;
-				float: left;
-				text-decoration: none;
-				background-color: red;
-				padding: 10px 20px;
-				color: #fff;
-				border-radius: 20px;
+				.btn(#ed1c24);
 
-				&:hover {
-			    background-color: mix(red, #000, 90%);
-			  }
 				> span {
 					.icon(@icon-map, 16px);
 				}

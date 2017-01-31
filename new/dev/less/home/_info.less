@@ -76,12 +76,51 @@
 						}
 					}
 					> h3 {
+						display: flex;
+						align-items: center;
 						line-height: 30px;
 						font-weight: bold;
 
 						.desktop({
 							font-size: 20px;
 						});
+						> a {
+							display: none;
+
+							.tablet({
+								display: block;
+								line-height: 0;
+								background-color: #ed1c24;
+								padding: 3px 6px;
+								margin-left: 5px;
+								border-radius: 10px;
+								font-size: 10px;
+								color: #fff;
+								text-decoration: none;
+
+								.desktop({
+									padding: 5px 10px;
+								});
+								&:hover {
+							    background-color: mix(#ed1c24, #000, 90%);
+							  }
+								> .icon {
+									.icon(@icon-youtube, 9px);
+								}
+								> .long {
+									display: none;
+
+									.huge({
+										display: block;
+									});
+								}
+								> .short {
+									.huge({
+										display: none;
+									});
+								}
+							});
+						}
 					}
 				}
 				> p {
