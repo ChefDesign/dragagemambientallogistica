@@ -1250,23 +1250,10 @@ nav > .social > ul > li > a.youtube::before {
     text-align: center;
     vertical-align: middle;
   }
-  .info > div > .item > .content > header > h3 > a > .long {
-    display: none;
-  }
 }
 @media (min-width: 48em) and (min-width: 62em) {
   .info > div > .item > .content > header > h3 > a {
     padding: 5px 10px;
-  }
-}
-@media (min-width: 48em) and (min-width: 75em) {
-  .info > div > .item > .content > header > h3 > a > .long {
-    display: block;
-  }
-}
-@media (min-width: 48em) and (min-width: 75em) {
-  .info > div > .item > .content > header > h3 > a > .short {
-    display: none;
   }
 }
 .info > div > .item > .content > p {
