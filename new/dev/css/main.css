@@ -191,6 +191,10 @@ body > .full.video {
 body > .full.contatos {
   background-color: #cee6bf;
 }
+body > .full.footer {
+  background-color: #333;
+  color: #fff;
+}
 body .hidden {
   visibility: hidden;
 }
@@ -754,6 +758,21 @@ nav > .social > ul > li > a.youtube::before {
   font-size: 16;
   text-align: center;
   vertical-align: middle;
+}
+.footer {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  font-size: 10px;
+}
+.footer > footer > p > span,
+.footer > footer > p > a {
+  color: #76b53c;
+}
+.footer > footer > p > a {
+  text-decoration: none;
 }
 .info {
   -webkit-box-sizing: border-box;
