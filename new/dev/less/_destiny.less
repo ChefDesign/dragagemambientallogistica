@@ -1,0 +1,23 @@
+.destiny {
+	.box-sizing();
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 20px;
+
+	.desktop({
+		display: none;
+	});
+	> a {
+		margin: 0 10px;
+		
+		&.waze {
+			.btn(#93c4d3);
+			.icon(@icon-waze);
+		}
+		&.maps {
+			.btn(#ed1c24);
+			.icon(@icon-map);
+		}
+	}
+}
