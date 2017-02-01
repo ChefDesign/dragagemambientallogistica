@@ -8,6 +8,7 @@
   "license": "ISC",
   "homepage": "https://github.com/dnstld/project-starter-less",
   "devDependencies": {
-    "eric-mayer-reset-less-sass": "https://github.com/dnstld/eric-mayer-reset-less-sass.git"
+    "eric-mayer-reset-less-sass": "https://github.com/dnstld/eric-mayer-reset-less-sass.git",
+    "slick-carousel": "^1.6.0"
   }
 }
