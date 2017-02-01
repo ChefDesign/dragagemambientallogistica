@@ -25,53 +25,7 @@ var MyPage = {
   init: function() {
     "use strict";
 
-    MyPage.slider();
-  },
-   /**
-   * slider
-   * @access public
-   * @desc slick-carousel plugin
-   *
-   * @return {Void}
-   */
-  slider: function() {
-    "use strict";
-
-    $(".slider").slick({
-      // normal options...
-      centerMode: true,
-      centerPadding: '20px',
-      speed: 300,
-      lazyLoad: 'ondemand',
-
-      // the magic
-      // responsive: [
-      //   {
-      //     breakpoint: 480,
-      //     settings: {
-      //       arrows: false,
-      //       centerMode: true,
-      //       centerPadding: '40px',
-      //       slidesToShow: 2
-      //     }
-      //   },
-      //   {
-      //     breakpoint: 768,
-      //     settings: {
-      //       arrows: false,
-      //       centerMode: true,
-      //       centerPadding: '40px',
-      //       slidesToShow: 3
-      //   }
-      //   },
-      //   {
-      //     breakpoint: 1024,
-      //     settings: {
-      //       settings: "unslick" // destroys slick
-      //     }
-      //   }
-      // ]
-    });
+    console.log("Seja bem-vindo!");
   }
 }
 
