@@ -1,2 +1,42 @@
 .clientes {
+	.box-sizing();
+	width: 100%;
+	max-width: 1000px;
+	padding: 10px;
+	margin: 0 auto;
+
+	> header {
+		margin-bottom: 10px;
+
+		> h3 {
+			font-weight: bold;
+		}
+	}
+	> .logos {
+		.clearfix();
+		width: 100%;
+
+		> .all {
+			.box-sizing();
+			width: 46%;
+			margin: 0 2% 2% 2%;
+			float: left;
+			padding: 5px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+
+			.mobile-landscape({
+				width: 29%;
+			});
+			.tablet({
+				width: 21%;
+			});
+			.desktop({
+				width: 16%;
+			});
+			> img {
+				width: 100%;
+			}
+		}
+	}
 }
