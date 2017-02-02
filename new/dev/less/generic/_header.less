@@ -1,19 +1,23 @@
 .header {
 	max-width: 1000px;
 	margin: 0 auto;
+	padding: 10px;
+
+	.mobile({
+		padding: 20px;
+	});
+	.desktop({
+		padding: 40px;
+	});
 
 	> .content {
 		.clearfix();
-		margin: 20px;
 
-		.desktop({
-			margin: 40px;
-		});
 		> img {
 			float: left;
 			height: 60px;
 
-			.mobile-landscape({
+			.mobile({
 				height: 75px;
 			});
 			.tablet({
@@ -29,7 +33,7 @@
 			height: 60px;
 			margin-left: 20px;
 
-			.mobile-landscape({
+			.mobile({
 				height: 75px;
 			});
 			.tablet({
@@ -39,14 +43,15 @@
 			.desktop({
 				height: 120px;
 			});
+
 			> h1 {
 	  		white-space: nowrap;
 	  		font-size: 13px;
 	  		letter-spacing: 1px;
-	  		vertical-align:middle;
+	  		vertical-align: middle;
   			display: table-cell;
 
-  			.mobile-landscape({
+  			.mobile({
 					font-size: 18px;
 				});
 	  		.tablet({
@@ -58,43 +63,44 @@
 				});
 			}
 		}
-		> .contact {
+		> .contacts {
 			display: none;
+			float: right;
+			height: 90px;
+			margin-left: 20px;
+			padding-left: 20px;
+			border-left: 1px solid @color-dark;
 
 			.tablet({
 				display: table;
-				float: right;
-				height: 90px;
-				margin-left: 20px;
-				padding-left: 20px;
-				border-left: 1px solid @color-dark;
-
-				> .container {
-					vertical-align:middle;
-  				display: table-cell;
-
-					> .phone {
-						margin: 10px 0;
-
-						> .icon {
-							margin-right: 5px;
-						}
-						&.main {
-							> .icon {
-								.icon(@icon-phone);
-							}
-						}
-						&.mobile {
-							> .icon {
-								.icon(@icon-smartphone);
-							}
-						}
-					}
-				}
 			});
 			.desktop({
 				height: 120px;
 			});
+			
+			> .container {
+				vertical-align: middle;
+				display: table-cell;
+
+				> .phone {
+					margin: 10px 0;
+
+					.desktop({
+						font-size: 18px;
+					});
+
+					> .icon {
+						margin-right: 5px;
+
+						&.main {
+							.icon(@icon-phone);
+						}
+						&.mobile {
+							.icon(@icon-smartphone);
+						}
+					}
+				}
+			}
 		}
 	}
 }
