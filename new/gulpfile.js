@@ -13,6 +13,7 @@ var gulp = require("gulp"),
 	// js files
 	scripts = {
 		jquery: "node_modules/jquery/dist/jquery.js",
+		scroll: "vendor/jquery-smooth-scroll/jquery.smooth-scroll.js",
 		main: "dev/js/main.js"
 	};
 
@@ -60,6 +61,7 @@ gulp.task('css', function() {
 gulp.task('js', function() {
 	return gulp.src([
 			scripts.jquery,
+			scripts.scroll,
 			scripts.main
 		])
 		.pipe(concatJS('main.js'))

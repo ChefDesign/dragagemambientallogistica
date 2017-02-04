@@ -26,6 +26,7 @@ var Ambiental = {
     "use strict";
 
     Ambiental.fixedNav();
+    Ambiental.videoAnchor();
   },
   /**
    * fixedNav
@@ -38,6 +39,23 @@ var Ambiental = {
     'use strict';
 
     console.log("em desenvolvimento");
+  },
+  /**
+   * videoAnchor
+   * @access public
+   * @desc plugin jquery-smooth-scroll
+   *
+   * @return {Void}
+   */
+  videoAnchor: function() {
+    'use strict';
+
+    $('#scrollVideo').smoothScroll({
+      offset: 0,
+      easing: 'swing',
+      speed: 500,
+      preventDefault: true
+    });
   }
 }
 
