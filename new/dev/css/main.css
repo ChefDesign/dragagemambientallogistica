@@ -178,6 +178,11 @@ body > .full {
 body > .full.navigation {
   background-color: #333;
 }
+body > .full.navigation.sticky {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
 @media (min-width: 48em) {
   body > .full.estimate {
     background-color: #f2f2f2;
@@ -723,23 +728,6 @@ nav > .social > ul > li > a.youtube::before {
   text-align: center;
   vertical-align: middle;
 }
-.social > ul > li > a.pinterest::before {
-  content: "\e907";
-}
-.social > ul > li > a.pinterest::before {
-  font-family: 'dragagem-icons' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 16;
-  text-align: center;
-  vertical-align: middle;
-}
 .social > ul > li > a.google-plus::before {
   content: "\e902";
 }
@@ -941,6 +929,14 @@ nav > .social > ul > li > a.youtube::before {
 .contacts > div > .container > .section > span > .text.bold {
   font-weight: bold;
 }
+.contacts > div > .container > .section > span > .text.fixMobile {
+  font-size: 13px;
+}
+@media (min-width: 30em) {
+  .contacts > div > .container > .section > span > .text.fixMobile {
+    font-size: 14px;
+  }
+}
 .contacts > div > .container > .section > span > .text > a {
   font-size: 13px;
   text-decoration: none;
@@ -1075,7 +1071,10 @@ nav > .social > ul > li > a.youtube::before {
   box-sizing: border-box;
   padding: 10px;
   text-align: center;
-  font-size: 10px;
+}
+.footer > footer > p {
+  font-size: 11px;
+  line-height: 150%;
 }
 .footer > footer > p > span,
 .footer > footer > p > a {

@@ -1,4 +1,4 @@
-var MyPage = {
+var Ambiental = {
   /**
    * instances
    * @access public
@@ -25,12 +25,24 @@ var MyPage = {
   init: function() {
     "use strict";
 
-    console.log("Seja bem-vindo!");
+    Ambiental.fixedNav();
+  },
+  /**
+   * fixedNav
+   * @access public
+   * @desc fixed navigation bar
+   *
+   * @return {Void}
+   */
+  fixedNav: function() {
+    'use strict';
+
+    console.log("em desenvolvimento");
   }
 }
 
-$(document).on("ready", function() {
-  "use strict";
+$(document).on('ready', function() {
+  'use strict';
 
-  MyPage.init();
+  Ambiental.init();
 });
