@@ -188,7 +188,7 @@ body > .full.navigation {
 body > .full.video {
   background-color: #e6f7da;
 }
-body > .full.contatos {
+body > .full.contacts {
   background-color: #cee6bf;
 }
 body > .full.footer {
@@ -774,7 +774,7 @@ nav > .social > ul > li > a.youtube::before {
   text-align: center;
   vertical-align: middle;
 }
-.contacts > section {
+.contacts > div {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -783,57 +783,57 @@ nav > .social > ul > li > a.youtube::before {
   margin: 0 auto;
   padding: 10px;
 }
-.contacts > section:after {
+.contacts > div:after {
   content: "";
   display: table;
   clear: both;
 }
 @media (min-width: 48em) {
-  .contacts > section {
+  .contacts > div {
     padding: 20px;
   }
 }
 @media (min-width: 62em) {
-  .contacts > section {
+  .contacts > div {
     padding: 40px;
   }
 }
-.contacts > section > img {
+.contacts > div > img {
   display: none;
 }
 @media (min-width: 48em) {
-  .contacts > section > img {
+  .contacts > div > img {
     display: block;
     float: left;
     height: 90px;
     margin-right: 40px;
   }
 }
-.contacts > section > .container {
+.contacts > div > .container {
   float: left;
   width: auto;
 }
-.contacts > section > .container > h3 {
+.contacts > div > .container > h3 {
   margin-bottom: 10px;
   font-weight: bold;
 }
 @media (min-width: 48em) {
-  .contacts > section > .container > h3 {
+  .contacts > div > .container > h3 {
     font-size: 18px;
   }
 }
 @media (min-width: 62em) {
-  .contacts > section > .container > h3 {
+  .contacts > div > .container > h3 {
     font-size: 20px;
   }
 }
 @media (min-width: 48em) {
-  .contacts > section > .container > .section {
+  .contacts > div > .container > .section {
     float: left;
     margin-right: 40px;
   }
 }
-.contacts > section > .container > .section > span {
+.contacts > div > .container > .section > span {
   display: block;
   width: 100%;
   height: 20px;
@@ -841,12 +841,12 @@ nav > .social > ul > li > a.youtube::before {
   margin-bottom: 5px;
 }
 @media (min-width: 48em) {
-  .contacts > section > .container > .section > span {
+  .contacts > div > .container > .section > span {
     height: 30px;
     line-height: 30px;
   }
 }
-.contacts > section > .container > .section > span > .icon {
+.contacts > div > .container > .section > span > .icon {
   display: block;
   float: left;
   width: 20px;
@@ -857,10 +857,10 @@ nav > .social > ul > li > a.youtube::before {
   background-color: #fff;
   margin-right: 5px;
 }
-.contacts > section > .container > .section > span > .icon.phone::before {
+.contacts > div > .container > .section > span > .icon.phone::before {
   content: "\e906";
 }
-.contacts > section > .container > .section > span > .icon.phone::before {
+.contacts > div > .container > .section > span > .icon.phone::before {
   font-family: 'dragagem-icons' !important;
   speak: none;
   font-style: normal;
@@ -874,10 +874,10 @@ nav > .social > ul > li > a.youtube::before {
   text-align: center;
   vertical-align: middle;
 }
-.contacts > section > .container > .section > span > .icon.mobile::before {
+.contacts > div > .container > .section > span > .icon.mobile::before {
   content: "\e909";
 }
-.contacts > section > .container > .section > span > .icon.mobile::before {
+.contacts > div > .container > .section > span > .icon.mobile::before {
   font-family: 'dragagem-icons' !important;
   speak: none;
   font-style: normal;
@@ -891,10 +891,10 @@ nav > .social > ul > li > a.youtube::before {
   text-align: center;
   vertical-align: middle;
 }
-.contacts > section > .container > .section > span > .icon.mail::before {
+.contacts > div > .container > .section > span > .icon.mail::before {
   content: "\e904";
 }
-.contacts > section > .container > .section > span > .icon.mail::before {
+.contacts > div > .container > .section > span > .icon.mail::before {
   font-family: 'dragagem-icons' !important;
   speak: none;
   font-style: normal;
@@ -908,10 +908,10 @@ nav > .social > ul > li > a.youtube::before {
   text-align: center;
   vertical-align: middle;
 }
-.contacts > section > .container > .section > span > .icon.address::before {
+.contacts > div > .container > .section > span > .icon.address::before {
   content: "\e905";
 }
-.contacts > section > .container > .section > span > .icon.address::before {
+.contacts > div > .container > .section > span > .icon.address::before {
   font-family: 'dragagem-icons' !important;
   speak: none;
   font-style: normal;
@@ -926,39 +926,39 @@ nav > .social > ul > li > a.youtube::before {
   vertical-align: middle;
 }
 @media (min-width: 48em) {
-  .contacts > section > .container > .section > span > .icon {
+  .contacts > div > .container > .section > span > .icon {
     width: 30px;
     height: 30px;
     line-height: 30px;
   }
-  .contacts > section > .container > .section > span > .icon.phone:before,
-  .contacts > section > .container > .section > span > .icon.mobile:before,
-  .contacts > section > .container > .section > span > .icon.mail:before,
-  .contacts > section > .container > .section > span > .icon.address:before {
+  .contacts > div > .container > .section > span > .icon.phone:before,
+  .contacts > div > .container > .section > span > .icon.mobile:before,
+  .contacts > div > .container > .section > span > .icon.mail:before,
+  .contacts > div > .container > .section > span > .icon.address:before {
     font-size: 14px;
   }
 }
-.contacts > section > .container > .section > span > .text.bold {
+.contacts > div > .container > .section > span > .text.bold {
   font-weight: bold;
 }
-.contacts > section > .container > .section > span > .text > a {
+.contacts > div > .container > .section > span > .text > a {
   font-size: 13px;
   text-decoration: none;
   color: #333;
 }
-.contacts > section > .container > .section > span > .text > a:hover {
+.contacts > div > .container > .section > span > .text > a:hover {
   text-decoration: underline;
 }
 @media (min-width: 30em) {
-  .contacts > section > .container > .section > span > .text > a {
+  .contacts > div > .container > .section > span > .text > a {
     font-size: 14px;
   }
 }
-.contacts > section > .gmaps {
+.contacts > div > .gmaps {
   display: none;
 }
 @media (min-width: 62em) {
-  .contacts > section > .gmaps {
+  .contacts > div > .gmaps {
     display: inline-block;
     border-radius: 20px;
     padding: 10px 20px;
@@ -967,13 +967,13 @@ nav > .social > ul > li > a.youtube::before {
     color: #fff;
     background-color: #ed1c24;
   }
-  .contacts > section > .gmaps:hover {
+  .contacts > div > .gmaps:hover {
     background-color: #d51920;
   }
-  .contacts > section > .gmaps > span::before {
+  .contacts > div > .gmaps > span::before {
     content: "\e905";
   }
-  .contacts > section > .gmaps > span::before {
+  .contacts > div > .gmaps > span::before {
     font-family: 'dragagem-icons' !important;
     speak: none;
     font-style: normal;
@@ -995,7 +995,13 @@ nav > .social > ul > li > a.youtube::before {
   width: 100%;
   text-align: center;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px 20px;
+}
+@media (min-width: 48em) {
+  .destiny {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 @media (min-width: 62em) {
   .destiny {
