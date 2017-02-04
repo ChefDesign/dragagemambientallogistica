@@ -6,8 +6,12 @@
 	margin: 0 auto;
 
 	.tablet({
+		padding: 20px;
+	});
+	.desktop({
 		padding: 40px;
 	});
+
 	> div {
 		.clearfix();
 		.box-sizing();
@@ -18,6 +22,7 @@
 				border-bottom: 1px solid #ccc;
 			}
 		});
+
 		> .item {
 			.box-sizing();
 			.clearfix();
@@ -27,6 +32,7 @@
 				width: 50%;
 				float: left;
 			});
+			
 			> .content {
 				.clearfix();
 				.box-sizing();
@@ -65,13 +71,13 @@
 						float: left;
 						margin-right: 10px;
 
-						&.sobre {
+						&.about {
 							.icon(@icon-boat, 18px);
 						}
-						&.servicos {
+						&.services {
 							.icon(@icon-water);
 						}
-						&.diferencial {
+						&.difference {
 							.icon(@icon-recycle);
 						}
 					}
@@ -84,6 +90,7 @@
 						.desktop({
 							font-size: 20px;
 						});
+
 						> a {
 							display: none;
 
@@ -101,6 +108,7 @@
 								.desktop({
 									padding: 5px 10px;
 								});
+
 								&:hover {
 							    background-color: mix(#ed1c24, #000, 90%);
 							  }
@@ -120,9 +128,6 @@
 					line-height: 120%;
 					float: left;
 
-					.mobile({
-						/*padding: 20px;*/
-					});
 					.tablet({
 						width: 50%;
 					});

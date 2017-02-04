@@ -1089,6 +1089,11 @@ nav > .social > ul > li > a.youtube::before {
 }
 @media (min-width: 48em) {
   .info {
+    padding: 20px;
+  }
+}
+@media (min-width: 62em) {
+  .info {
     padding: 40px;
   }
 }
@@ -1170,10 +1175,10 @@ nav > .social > ul > li > a.youtube::before {
   float: left;
   margin-right: 10px;
 }
-.info > div > .item > .content > header > .icon.sobre::before {
+.info > div > .item > .content > header > .icon.about::before {
   content: "\e900";
 }
-.info > div > .item > .content > header > .icon.sobre::before {
+.info > div > .item > .content > header > .icon.about::before {
   font-family: 'dragagem-icons' !important;
   speak: none;
   font-style: normal;
@@ -1187,10 +1192,10 @@ nav > .social > ul > li > a.youtube::before {
   text-align: center;
   vertical-align: middle;
 }
-.info > div > .item > .content > header > .icon.servicos::before {
+.info > div > .item > .content > header > .icon.services::before {
   content: "\e90a";
 }
-.info > div > .item > .content > header > .icon.servicos::before {
+.info > div > .item > .content > header > .icon.services::before {
   font-family: 'dragagem-icons' !important;
   speak: none;
   font-style: normal;
@@ -1204,10 +1209,10 @@ nav > .social > ul > li > a.youtube::before {
   text-align: center;
   vertical-align: middle;
 }
-.info > div > .item > .content > header > .icon.diferencial::before {
+.info > div > .item > .content > header > .icon.difference::before {
   content: "\e908";
 }
-.info > div > .item > .content > header > .icon.diferencial::before {
+.info > div > .item > .content > header > .icon.difference::before {
   font-family: 'dragagem-icons' !important;
   speak: none;
   font-style: normal;
@@ -1283,11 +1288,6 @@ nav > .social > ul > li > a.youtube::before {
   width: 100%;
   line-height: 120%;
   float: left;
-}
-@media (min-width: 30em) {
-  .info > div > .item > .content > .list {
-    /*padding: 20px;*/
-  }
 }
 @media (min-width: 48em) {
   .info > div > .item > .content > .list {
