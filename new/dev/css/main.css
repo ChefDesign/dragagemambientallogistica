@@ -179,7 +179,7 @@ body > .full.navigation {
   background-color: #333;
 }
 @media (min-width: 48em) {
-  body > .full.orcamento {
+  body > .full.estimate {
     background-color: #f2f2f2;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
@@ -1294,14 +1294,14 @@ nav > .social > ul > li > a.youtube::before {
     width: 50%;
   }
 }
-.orcamento {
+.estimate {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   text-align: center;
 }
-.orcamento > section {
+.estimate > section {
   display: inline-block;
   padding: 10px;
   border: 1px solid #ccc;
@@ -1310,31 +1310,36 @@ nav > .social > ul > li > a.youtube::before {
   margin: 10px;
 }
 @media (min-width: 30em) {
-  .orcamento > section {
+  .estimate > section {
     padding: 20px;
   }
 }
 @media (min-width: 48em) {
-  .orcamento > section {
+  .estimate > section {
     border-style: none;
   }
 }
-.orcamento > section > h3 {
+@media (min-width: 62em) {
+  .estimate > section {
+    padding: 30px;
+  }
+}
+.estimate > section > h3 {
   font-weight: bold;
   margin-bottom: 10px;
 }
 @media (min-width: 48em) {
-  .orcamento > section > h3 {
+  .estimate > section > h3 {
     font-size: 18px;
   }
 }
 @media (min-width: 62em) {
-  .orcamento > section > h3 {
+  .estimate > section > h3 {
     font-size: 24px;
     margin-bottom: 20px;
   }
 }
-.orcamento > section > a {
+.estimate > section > a {
   display: inline-block;
   border-radius: 20px;
   padding: 10px 20px;
@@ -1343,7 +1348,7 @@ nav > .social > ul > li > a.youtube::before {
   color: #fff;
   background-color: #76b53c;
 }
-.orcamento > section > a:hover {
+.estimate > section > a:hover {
   background-color: #6aa336;
 }
 .video > section {
