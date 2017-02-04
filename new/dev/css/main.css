@@ -1148,11 +1148,11 @@ nav > .social > ul > li > a.youtube::before {
     padding: 20px;
     border-style: none;
   }
-  .info > div > .item > .content.diferencial {
+  .info > div > .item > .content.difference {
     width: 100%;
   }
 }
-.info > div > .item > .content.diferencial {
+.info > div > .item > .content.difference {
   border-bottom: none;
 }
 .info > div > .item > .content > header {
@@ -1299,37 +1299,24 @@ nav > .social > ul > li > a.youtube::before {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  padding: 10px;
   text-align: center;
 }
-@media (min-width: 30em) {
-  .orcamento {
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-}
-@media (min-width: 48em) {
-  .orcamento {
-    padding-right: 200px;
-    padding-left: 200px;
-  }
-}
-@media (min-width: 62em) {
-  .orcamento {
-    padding: 40px 300px;
-  }
-}
 .orcamento > section {
+  display: inline-block;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f2f2f2;
-  margin-bottom: 10px;
+  margin: 10px;
+}
+@media (min-width: 30em) {
+  .orcamento > section {
+    padding: 20px;
+  }
 }
 @media (min-width: 48em) {
   .orcamento > section {
     border-style: none;
-    margin-bottom: 0;
   }
 }
 .orcamento > section > h3 {
