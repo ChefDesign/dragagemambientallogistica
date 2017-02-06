@@ -1073,14 +1073,16 @@ nav > .social > ul > li > a.youtube::before {
   text-align: center;
 }
 .footer > footer > p {
-  font-size: 11px;
+  font-size: 9px;
   line-height: 150%;
 }
-.footer > footer > p > span,
-.footer > footer > p > a {
-  color: #76b53c;
+@media (min-width: 30em) {
+  .footer > footer > p {
+    font-size: 11px;
+  }
 }
 .footer > footer > p > a {
+  color: #76b53c;
   text-decoration: none;
 }
 .info {
