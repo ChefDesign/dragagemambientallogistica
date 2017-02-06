@@ -181,7 +181,6 @@ body > .full.navigation {
 }
 body > .full.navigation.sticky {
   position: fixed;
-  position: device-fixed;
   top: 0;
   left: 0;
   z-index: 10;

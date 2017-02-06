@@ -42,13 +42,22 @@ var Ambiental = {
       var distance = $('.header').outerHeight(),
           scrollTop = $(window).scrollTop();
 
-      if (scrollTop >= distance) {
-        $('#navigation').addClass('sticky');
-        $('.cover').addClass('sticky');
+      if (navigator.platform.match(/iP(od|hone|ad)/i)) {
+        if (scrollTop >= distance) {
+          $('#navigation').addClass('sticky').css('top', ($(window).height() + $(document).scrollTop() - 50) + 'px')
+        } else {
+          $('#navigation').removeClass('sticky');
+        }
       } else {
-        $('#navigation').removeClass('sticky');
-        $('.cover').removeClass('sticky');
+        if (scrollTop >= distance) {
+          $('#navigation').addClass('sticky');
+          $('.cover').addClass('sticky');
+        } else {
+          $('#navigation').removeClass('sticky');
+          $('.cover').removeClass('sticky');
+        }
       }
+
     });
   },
   /**
