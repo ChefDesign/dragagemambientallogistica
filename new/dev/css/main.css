@@ -177,10 +177,12 @@ body > .full {
 }
 body > .full.navigation {
   background-color: #333;
+  position: static;
 }
 body > .full.navigation.sticky {
-  position: absolute;
+  position: fixed;
   top: 0;
+  left: 0;
   z-index: 10;
 }
 @media (min-width: 48em) {
@@ -555,6 +557,9 @@ nav > .social > ul > li > a.youtube::before {
   .cover {
     padding-top: 40px;
   }
+}
+.cover.sticky {
+  margin-top: 50px;
 }
 .cover > .border {
   border: 1px solid #ccc;

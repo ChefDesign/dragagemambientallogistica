@@ -38,7 +38,18 @@ var Ambiental = {
   fixedNav: function() {
     'use strict';
 
-    console.log("em desenvolvimento");
+    $(document).scroll(function() {
+      var distance = $('.header').outerHeight(),
+          scrollTop = $(window).scrollTop();
+
+      if (scrollTop >= distance) {
+        $('#navigation').addClass('sticky');
+        $('.cover').addClass('sticky');
+      } else {
+        $('#navigation').removeClass('sticky');
+        $('.cover').removeClass('sticky');
+      }
+    });
   },
   /**
    * videoAnchor
