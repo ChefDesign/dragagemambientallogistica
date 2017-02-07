@@ -38,16 +38,28 @@ var Ambiental = {
   fixedNav: function() {
     'use strict';
 
-    $(document).scroll(function() {
+    $(window).scroll(function() {
       var distance = $('.header').outerHeight(),
           scrollTop = $(window).scrollTop();
 
-      if (scrollTop >= distance) {
-        $('#navigation').addClass('sticky');
-        $('.cover').addClass('sticky');
+      if (navigator.platform == 'iPad' || navigator.platform == 'iPhone' || navigator.platform == 'iPod') {
+        console.log("ios");
+        if (scrollTop >= distance) {
+          $('#navigation').css('top', ($(window).height() + $(document).scrollTop() - distance ) + 'px');
+          $('.cover').addClass('sticky');
+        } else {
+          $('#navigation').css('position', 'static');
+          $('.cover').removeClass('sticky');
+        }
       } else {
-        $('#navigation').removeClass('sticky');
-        $('.cover').removeClass('sticky');
+        if (scrollTop >= distance) {
+          console.log("android");
+          $('#navigation').addClass('sticky');
+          $('.cover').addClass('sticky');
+        } else {
+          $('#navigation').removeClass('sticky');
+          $('.cover').removeClass('sticky');
+        }
       }
     });
   },
