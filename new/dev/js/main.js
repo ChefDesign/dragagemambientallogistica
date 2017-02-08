@@ -31,7 +31,7 @@ var Ambiental = {
   /**
    * fixedNav
    * @access public
-   * @desc fixed navigation bar
+   * @desc fixed navigation bar (bug fix ios)
    *
    * @return {Void}
    */
@@ -42,23 +42,27 @@ var Ambiental = {
       var distance = $('.header').outerHeight(),
           scrollTop = $(window).scrollTop();
 
-      if (navigator.platform == 'iPad' || navigator.platform == 'iPhone' || navigator.platform == 'iPod') {
-        console.log("ios");
+      if ((navigator.platform == 'iPad' || navigator.platform == 'iPhone' || navigator.platform == 'iPod')) {
         if (scrollTop >= distance) {
-          $('#navigation').css('top', ($(window).height() + $(document).scrollTop() - distance ) + 'px');
-          $('.cover').addClass('sticky');
+          $('#navigation').css({
+            position: 'absolute',
+            top: ($(document).scrollTop()) + 'px',
+            zIndex: 10
+          });
+          $('.header').addClass('sticky');
         } else {
-          $('#navigation').css('position', 'static');
-          $('.cover').removeClass('sticky');
+          $('#navigation').css({
+            position: 'static'
+          });
+          $('.header').removeClass('sticky');
         }
       } else {
         if (scrollTop >= distance) {
-          console.log("android");
           $('#navigation').addClass('sticky');
-          $('.cover').addClass('sticky');
+          $('.header').addClass('sticky');
         } else {
           $('#navigation').removeClass('sticky');
-          $('.cover').removeClass('sticky');
+          $('.header').removeClass('sticky');
         }
       }
     });
