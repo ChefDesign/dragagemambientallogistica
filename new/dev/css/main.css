@@ -198,9 +198,22 @@ body > .full.video {
 body > .full.contacts {
   background-color: #cee6bf;
 }
+@media (min-width: 48em) {
+  body > .full.contacts.hideInTabletPropostas {
+    display: none;
+  }
+}
 body > .full.footer {
   background-color: #333;
   color: #fff;
+}
+body > .full.contactus {
+  display: none;
+}
+@media (min-width: 48em) {
+  body > .full.contactus {
+    display: block;
+  }
 }
 body .hidden {
   visibility: hidden;
@@ -1459,4 +1472,245 @@ nav > .social > ul > li > a.youtube::before {
 }
 .client > .logos > .all > img {
   width: 100%;
+}
+.contactus {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.contactus > div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.contactus > div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 48em) {
+  .contactus > div {
+    padding: 20px;
+  }
+}
+@media (min-width: 62em) {
+  .contactus > div {
+    padding: 40px;
+  }
+}
+.contactus > div > .contacts {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+}
+@media (min-width: 48em) {
+  .contactus > div > .contacts {
+    width: 50%;
+    float: left;
+  }
+}
+.contactus > div > .contacts > h3 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+@media (min-width: 48em) {
+  .contactus > div > .contacts > h3 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 62em) {
+  .contactus > div > .contacts > h3 {
+    font-size: 20px;
+  }
+}
+.contactus > div > .contacts > span {
+  display: block;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+@media (min-width: 48em) {
+  .contactus > div > .contacts > span {
+    height: 30px;
+    line-height: 30px;
+  }
+}
+.contactus > div > .contacts > span > .icon {
+  display: block;
+  float: left;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 5px;
+}
+.contactus > div > .contacts > span > .icon.phone::before {
+  content: "\e906";
+}
+.contactus > div > .contacts > span > .icon.phone::before {
+  font-family: 'dragagem-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+.contactus > div > .contacts > span > .icon.mobile::before {
+  content: "\e909";
+}
+.contactus > div > .contacts > span > .icon.mobile::before {
+  font-family: 'dragagem-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+.contactus > div > .contacts > span > .icon.mail::before {
+  content: "\e904";
+}
+.contactus > div > .contacts > span > .icon.mail::before {
+  font-family: 'dragagem-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+.contactus > div > .contacts > span > .icon.address::before {
+  content: "\e905";
+}
+.contactus > div > .contacts > span > .icon.address::before {
+  font-family: 'dragagem-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+@media (min-width: 48em) {
+  .contactus > div > .contacts > span > .icon {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+  .contactus > div > .contacts > span > .icon.phone:before,
+  .contactus > div > .contacts > span > .icon.mobile:before,
+  .contactus > div > .contacts > span > .icon.mail:before,
+  .contactus > div > .contacts > span > .icon.address:before {
+    font-size: 14px;
+  }
+}
+.contactus > div > .contacts > span > .text.bold {
+  font-weight: bold;
+}
+.contactus > div > .contacts > span > .text.fixMobile {
+  font-size: 13px;
+}
+@media (min-width: 30em) {
+  .contactus > div > .contacts > span > .text.fixMobile {
+    font-size: 14px;
+  }
+}
+.contactus > div > .contacts > span > .text > a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #333;
+}
+.contactus > div > .contacts > span > .text > a:hover {
+  text-decoration: underline;
+}
+@media (min-width: 30em) {
+  .contactus > div > .contacts > span > .text > a {
+    font-size: 14px;
+  }
+}
+.contactus > div > .contacts > .gmaps {
+  display: none;
+}
+@media (min-width: 62em) {
+  .contactus > div > .contacts > .gmaps {
+    display: inline-block;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ed1c24;
+  }
+  .contactus > div > .contacts > .gmaps:hover {
+    background-color: #d51920;
+  }
+  .contactus > div > .contacts > .gmaps > span::before {
+    content: "\e905";
+  }
+  .contactus > div > .contacts > .gmaps > span::before {
+    font-family: 'dragagem-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+.form {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.form:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 48em) {
+  .form {
+    width: 50%;
+    float: left;
+  }
+}
+@media (min-width: 48em) {
+  .form.hideInTabletPropostas {
+    display: none;
+  }
 }

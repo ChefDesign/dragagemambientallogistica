@@ -1,0 +1,16 @@
+.form {
+	.clearfix();
+	.box-sizing();
+	padding: 10px;
+
+	.tablet({
+		width: 50%;
+		float: left;
+	});
+
+	&.hideInTabletPropostas {
+		.tablet({
+			display: none;
+		});
+	}
+}

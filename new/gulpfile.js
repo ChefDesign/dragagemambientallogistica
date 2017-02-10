@@ -74,8 +74,31 @@ gulp.task('js', function() {
 		.pipe(gulp.dest('production/dist/js'))
 });
 
-gulp.task('html', function() {
+gulp.task('index', function() {
 	return gulp.src('index.html')
+		.pipe(deleteLines({
+			'filters': [
+				/<link\s+rel=/i
+			]
+		}))
+		.pipe(insertLines({
+			'before': /<\/head>$/,
+			'lineBefore': '		<link rel="stylesheet" type="text/css" href="dist/css/main.min.css">',
+		}))
+		.pipe(deleteLines({
+			'filters': [
+				/<script\s+src=/i
+			]
+		}))
+		.pipe(insertLines({
+			'before': /<\/body>$/,
+			'lineBefore': '		<script src="dist/js/main.min.js"></script>'
+		}))
+		.pipe(gulp.dest('production'))
+});
+
+gulp.task('propostas', function() {
+	return gulp.src('propostas.html')
 		.pipe(deleteLines({
 			'filters': [
 				/<link\s+rel=/i
@@ -102,4 +125,4 @@ gulp.task('assets', function() {
 		.pipe(gulp.dest('production/assets'))
 });
 
-gulp.task('production', ['css','js', 'html', 'assets']);
+gulp.task('production', ['css','js', 'index', 'propostas', 'assets']);

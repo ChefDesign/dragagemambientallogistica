@@ -29,10 +29,23 @@ body {
 		}
 		&.contacts {
 			background-color: #cee6bf;
+
+			&.hideInTabletPropostas {
+				.tablet({
+					display: none;
+				});
+			}
 		}
 		&.footer {
 			background-color: @color-dark;
 			color: #fff;
+		}
+		&.contactus {
+			display: none;
+
+			.tablet({
+				display: block;
+			});
 		}
 	}
 
