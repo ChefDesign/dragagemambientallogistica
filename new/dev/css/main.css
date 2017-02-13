@@ -671,8 +671,10 @@ nav > .social > ul > li > a.youtube::before {
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
+  font-size: 14px;
   color: #333;
   background-color: #f9f1d7;
+  cursor: pointer;
 }
 .cover > .border > .banner > .info > a:hover {
   background-color: #e0d9c2;
@@ -978,8 +980,10 @@ nav > .social > ul > li > a.youtube::before {
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
+    font-size: 14px;
     color: #fff;
     background-color: #ed1c24;
+    cursor: pointer;
   }
   .contacts > div > .gmaps:hover {
     background-color: #d51920;
@@ -1031,8 +1035,10 @@ nav > .social > ul > li > a.youtube::before {
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
+  font-size: 14px;
   color: #fff;
   background-color: #93c4d3;
+  cursor: pointer;
 }
 .destiny > a.waze:hover {
   background-color: #84b0be;
@@ -1060,8 +1066,10 @@ nav > .social > ul > li > a.youtube::before {
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
+  font-size: 14px;
   color: #fff;
   background-color: #ed1c24;
+  cursor: pointer;
 }
 .destiny > a.maps:hover {
   background-color: #d51920;
@@ -1082,6 +1090,29 @@ nav > .social > ul > li > a.youtube::before {
   font-size: 16;
   text-align: center;
   vertical-align: middle;
+}
+@media (min-width: 48em) {
+  .destiny.inContacts {
+    display: none;
+  }
+}
+.destiny.insideContacts {
+  display: none;
+}
+@media (min-width: 48em) {
+  .destiny.insideContacts {
+    display: block;
+    padding-left: 0;
+    text-align: left;
+  }
+  .destiny.insideContacts > a {
+    margin-left: 0;
+  }
+}
+@media (min-width: 48em) and (min-width: 62em) {
+  .destiny.insideContacts > a.waze {
+    display: none;
+  }
 }
 .footer {
   -webkit-box-sizing: border-box;
@@ -1370,8 +1401,10 @@ nav > .social > ul > li > a.youtube::before {
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
+  font-size: 14px;
   color: #fff;
   background-color: #76b53c;
+  cursor: pointer;
 }
 .estimate > section > a:hover {
   background-color: #6aa336;
@@ -1668,8 +1701,10 @@ nav > .social > ul > li > a.youtube::before {
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
+    font-size: 14px;
     color: #fff;
     background-color: #ed1c24;
+    cursor: pointer;
   }
   .contactus > div > .contacts > .gmaps:hover {
     background-color: #d51920;
@@ -1707,10 +1742,97 @@ nav > .social > ul > li > a.youtube::before {
   .form {
     width: 50%;
     float: left;
+    padding: 0;
+    padding-right: 20px;
   }
 }
 @media (min-width: 48em) {
   .form.hideInTabletPropostas {
     display: none;
+  }
+}
+.form > form > label > input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  background-color: #efffdc;
+  padding: 0 10px;
+}
+.form > form > .contactme:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.form > form > .contactme > .wrap {
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+@media (min-width: 48em) {
+  .form > form > .contactme > .wrap {
+    margin-bottom: 20px;
+  }
+}
+.form > form > .contactme > .wrap > .checkbox {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  float: left;
+  position: relative;
+}
+.form > form > .contactme > .wrap > .checkbox.-selected {
+  border-color: #76b53c;
+}
+.form > form > .contactme > .wrap > .checkbox.-selected:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: inherit;
+  background-color: #76b53c;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.form > form > .contactme > .wrap > p {
+  display: bloxk;
+  float: left;
+  line-height: 20px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.form > form > input[type="submit"] {
+  display: inline-block;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  background-color: #76b53c;
+  cursor: pointer;
+  border-style: none;
+  display: block;
+  margin: 0 auto;
+}
+.form > form > input[type="submit"]:hover {
+  background-color: #6aa336;
+}
+@media (min-width: 48em) {
+  .form > form > input[type="submit"] {
+    margin: 0;
   }
 }

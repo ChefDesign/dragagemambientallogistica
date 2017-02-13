@@ -6,11 +6,88 @@
 	.tablet({
 		width: 50%;
 		float: left;
+		padding: 0;
+		padding-right: 20px;
 	});
 
 	&.hideInTabletPropostas {
 		.tablet({
 			display: none;
 		});
+	}
+
+	> form {
+		> label {
+			> input {
+				.box-sizing();
+				display: block;
+				width: 100%;
+				height: 40px;
+				margin-top: 5px;
+				margin-bottom: 10px;
+				border: 1px solid #ccc;
+				background-color: #efffdc;
+				padding: 0 10px;
+			}
+		}
+		> .contactme {
+			.clearfix();
+
+			> .wrap {
+				float: left;
+				margin-top: 5px;
+				margin-bottom: 10px;
+				cursor: pointer;
+
+				.tablet({
+					margin-bottom: 20px;
+				});
+
+				> .checkbox {
+					.box-sizing();
+					display: block;
+					width: 20px;
+					height: 20px;
+					border-radius: 50%;
+					border: 2px solid #ccc;
+					float: left;
+					position: relative;
+
+					&.-selected {
+						border-color: @color-secondary;
+
+						&:before {
+							content: "";
+							display: block;
+							width: 10px;
+							height: 10px;
+							border-radius: inherit;
+							background-color: @color-secondary;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translateX(-50%) translateY(-50%);
+						}
+					}
+				}
+				> p {
+					display: bloxk;
+					float: left;
+					line-height: 20px;
+					margin-left: 5px;
+					margin-right: 10px;
+				}
+			}
+		}
+		> input[type="submit"] {
+			.btn();
+			border-style: none;
+			display: block;
+			margin: 0 auto;
+
+			.tablet({
+				margin: 0;
+			});
+		}
 	}
 }

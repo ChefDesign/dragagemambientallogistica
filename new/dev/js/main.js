@@ -27,6 +27,7 @@ var Ambiental = {
 
     Ambiental.fixedNav();
     Ambiental.videoAnchor();
+    Ambiental.selectForm();
   },
   /**
    * fixedNav
@@ -82,6 +83,20 @@ var Ambiental = {
       easing: 'swing',
       speed: 500,
       preventDefault: true
+    });
+  },
+  /**
+   * selectForm
+   * @access public
+   * @desc form checkbox
+   *
+   * @return {Void}
+   */
+  selectForm: function() {
+    'use strict';
+
+    $('.wrap').click(function() {
+      $(this).children('.checkbox').toggleClass('-selected');
     });
   }
 }

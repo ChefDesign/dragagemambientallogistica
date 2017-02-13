@@ -73,9 +73,36 @@
 		<!-- contatos em tablet + -->
 		<section class="full contactus">
 			<div>
-				<div class="form">
-					Form tablet +
-				</div>
+				<section class="form">
+					<form method="POST" action="processa.php" id="form">
+						<label for="name">Nome
+							<input type="text" id="name" name="name" placeholder="Digite seu nome (obrigatório)" autofocus required>
+						</label>
+						<label for="email">E-mail
+							<input type="email" id="email" name="email" placeholder="Digite seu e-mail (obrigatório)" required>
+						</label>
+						<label for="phone">Telefone
+							<input type="phone" id="phone" name="phone" placeholder="Digite seu telefone">
+						</label>
+						<div class="contactme">
+							<p class="question">Como gostaria que entrássemos em contato?</p>
+
+							<div class="wrap">
+								<span class="checkbox -selected"></span>
+								<p>E-mail</p>
+							</div>
+							<div class="wrap">
+								<span class="checkbox"></span>
+								<p>Telefone</p>
+							</div>
+							<div class="wrap">
+								<span class="checkbox"></span>
+								<p>WhatsApp</p>
+							</div>
+						</div>
+						<input type="submit" value="Solicitar proposta">
+					</form>
+				</section>
 				<div class="contacts">
 					<h3>Contatos</h3>
 					<span>
@@ -97,21 +124,49 @@
 						<span class="text fixMobile">Av. Itavuvu - 4510, St. Cecília - Sorocaba - SP</span>
 					</span>
 
-					<a href="" class="gmaps"><span></span> Google Maps</a>
+					<section class="destiny insideContacts">
+						<a href="waze://?ll=-23.449267,-47.4823516&navigate=yes" class="waze" target="_blank"><span></span> Waze</a>
+						<a href="https://goo.gl/maps/AECYwSPvFbq" class="maps" target="_blank"><span></span> Google Maps</a>
+					</section>
 				</div>
 			</div>
 		</section>
 
 		<!-- formulario em mobile -->
 		<section class="form hideInTabletPropostas">
-			Form mobile
+			<form method="POST" action="processa.php" id="form">
+				<label for="name">Nome
+					<input type="text" id="name" name="name" placeholder="Digite seu nome (obrigatório)" autofocus required>
+				</label>
+				<label for="email">E-mail
+					<input type="email" id="email" name="email" placeholder="Digite seu e-mail (obrigatório)" required>
+				</label>
+				<label for="phone">Telefone
+					<input type="phone" id="phone" name="phone" placeholder="Digite seu telefone">
+				</label>
+				<div class="contactme">
+					<p class="question">Como gostaria que entrássemos em contato?</p>
+
+					<div class="wrap">
+						<span class="checkbox -selected"></span>
+						<p>E-mail</p>
+					</div>
+					<div class="wrap">
+						<span class="checkbox"></span>
+						<p>Telefone</p>
+					</div>
+					<div class="wrap">
+						<span class="checkbox"></span>
+						<p>WhatsApp</p>
+					</div>
+				</div>
+				<input type="submit" value="Solicitar proposta">
+			</form>
 		</section>
 
 		<!-- contatos em mobile  -->
 		<section class="full contacts hideInTabletPropostas">
 			<div>
-				<img src="./assets/images/logo-ambiental-logistica.png" alt="Logo" title="Imagem da logo">
-
 				<div class="container">
 					<h3>Contatos</h3>
 					<div class="section">
@@ -137,13 +192,11 @@
 						</span>
 					</div>
 				</div>
-
-				<a href="" class="gmaps"><span></span> Google Maps</a>
 			</div>
 		</section>
 
 		<!-- atalhos para waze e gmaps -->
-		<section class="destiny">
+		<section class="destiny inContacts">
 			<a href="waze://?ll=-23.449267,-47.4823516&navigate=yes" class="waze" target="_blank"><span></span> Waze</a>
 			<a href="https://goo.gl/maps/AECYwSPvFbq" class="maps" target="_blank"><span></span> Google Maps</a>
 		</section>
