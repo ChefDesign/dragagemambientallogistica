@@ -74,12 +74,12 @@
 		<section class="full contactus">
 			<div>
 				<section class="form">
-					<form method="POST" action="processa.php" id="form">
+					<form method="POST" id="form">
 						<label for="name">Nome
-							<input type="text" id="name" name="name" placeholder="Digite seu nome (obrigatório)" autofocus required>
+							<input type="text" id="name" name="name" placeholder="Digite seu nome" autofocus>
 						</label>
 						<label for="email">E-mail
-							<input type="email" id="email" name="email" placeholder="Digite seu e-mail (obrigatório)" required>
+							<input type="email" id="email" name="email" placeholder="Digite seu e-mail">
 						</label>
 						<label for="phone">Telefone
 							<input type="number" id="phone" name="phone" placeholder="Digite seu telefone">
@@ -90,17 +90,20 @@
 							<div class="wrap">
 								<span class="checkbox -selected"></span>
 								<p>E-mail</p>
+								<input type="hidden" name="sendEmail" value="E-mail" id="sendEmail">
 							</div>
 							<div class="wrap">
 								<span class="checkbox"></span>
 								<p>Telefone</p>
+								<input type="hidden" name="sendTelefone" value="Telefone" id="sendTelefone">
 							</div>
 							<div class="wrap">
 								<span class="checkbox"></span>
 								<p>WhatsApp</p>
+								<input type="hidden" name="sendWhatsApp" value="WhatsApp" id="sendWhatsApp">
 							</div>
 						</div>
-						<input type="submit" value="Solicitar proposta">
+						<input type="submit" value="Solicitar proposta" id="enviar">
 					</form>
 				</section>
 				<div class="contacts">
@@ -134,12 +137,12 @@
 
 		<!-- formulario em mobile -->
 		<section class="form hideInTabletPropostas">
-			<form method="POST" action="processa.php" id="form">
+			<form method="POST" id="form">
 				<label for="name">Nome
-					<input type="text" id="name" name="name" placeholder="Digite seu nome (obrigatório)" autofocus required>
+					<input type="text" id="name" name="name" placeholder="Digite seu nome">
 				</label>
 				<label for="email">E-mail
-					<input type="email" id="email" name="email" placeholder="Digite seu e-mail (obrigatório)" autocorrect="false" required>
+					<input type="email" id="email" name="email" placeholder="Digite seu e-mail" autocorrect="false">
 				</label>
 				<label for="phone">Telefone
 					<input type="number" id="phone" name="phone" placeholder="Digite seu telefone">
@@ -160,7 +163,7 @@
 						<p>WhatsApp</p>
 					</div>
 				</div>
-				<input type="submit" value="Solicitar proposta">
+				<input type="submit" value="Solicitar proposta" id="enviar">
 			</form>
 		</section>
 

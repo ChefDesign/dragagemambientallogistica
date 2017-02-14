@@ -18,6 +18,8 @@
 
 	> form {
 		> label {
+			display: block;
+
 			> input {
 				.box-sizing();
 				display: block;
@@ -28,6 +30,28 @@
 				border: 1px solid #ccc;
 				background-color: #efffdc;
 				padding: 0 10px;
+
+				&.error {
+					border-color: #cc0000;
+					margin-bottom: 5px;
+				}
+				&:focus {
+					outline: none;
+				}
+			}
+			input::-webkit-outer-spin-button,
+			input::-webkit-inner-spin-button {
+		    /* display: none; <- Crashes Chrome on hover */
+		    -webkit-appearance: none;
+		    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+			}
+			p {
+				font-size: 10px;
+				margin-bottom: 10px;
+
+				&.error {
+					color: #cc0000;
+				}
 			}
 		}
 		> .contactme {
@@ -84,10 +108,18 @@
 			border-style: none;
 			display: block;
 			margin: 0 auto;
+			outline: none;
 
 			.tablet({
 				margin: 0;
 			});
+
+			&.sucesso {
+				background-color: @color-primary;
+			}
+		}
+		> input[type="number"] {
+			-moz-appearance: textfield;
 		}
 	}
 }

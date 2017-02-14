@@ -14,6 +14,7 @@ var gulp = require("gulp"),
 	scripts = {
 		jquery: "node_modules/jquery/dist/jquery.js",
 		scroll: "vendor/jquery-smooth-scroll/jquery.smooth-scroll.js",
+		validation: "vendor/jquery-validation/dist/jquery.validate.js",
 		main: "dev/js/main.js"
 	};
 
@@ -62,6 +63,7 @@ gulp.task('js', function() {
 	return gulp.src([
 			scripts.jquery,
 			scripts.scroll,
+			scripts.validation,
 			scripts.main
 		])
 		.pipe(concatJS('main.js'))

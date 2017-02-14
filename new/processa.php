@@ -2,6 +2,9 @@
 	$nome = $_POST['name'];
 	$email = $_POST['email'];
 	$telefone = $_POST['phone'];
+	$sendEmail = $_POST['sendEmail'];
+	$sendTelefone = $_POST['sendTelefone'];
+	$sendWhatsApp = $_POST['sendWhatsApp'];
 	
 	$para = "contato@denistoledo.com.br";
 	$assunto = "Proposta online";
@@ -9,6 +12,7 @@
 		<b>Nome:</b> $nome<br />
 		<b>E-mail:</b> $email<br />
 		<b>Telefone:</b> $telefone<br />
+		<b>Contactar por:</b> $sendEmail, $sendTelefone, $sendWhatsApp<br />
 	";
 	
 	$header = "From: $email \r\n";

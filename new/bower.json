@@ -9,6 +9,7 @@
   "homepage": "https://github.com/dnstld/project-starter-less",
   "devDependencies": {
     "eric-mayer-reset-less-sass": "https://github.com/dnstld/eric-mayer-reset-less-sass.git",
-    "jquery-smooth-scroll": "https://github.com/kswedberg/jquery-smooth-scroll.git#^2.1.2"
+    "jquery-smooth-scroll": "https://github.com/kswedberg/jquery-smooth-scroll.git#^2.1.2",
+    "jquery-validation": "https://github.com/jquery-validation/jquery-validation.git#^1.16.0"
   }
 }

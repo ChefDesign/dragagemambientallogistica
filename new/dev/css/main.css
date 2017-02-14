@@ -1751,6 +1751,9 @@ nav > .social > ul > li > a.youtube::before {
     display: none;
   }
 }
+.form > form > label {
+  display: block;
+}
 .form > form > label > input {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1763,6 +1766,27 @@ nav > .social > ul > li > a.youtube::before {
   border: 1px solid #ccc;
   background-color: #efffdc;
   padding: 0 10px;
+}
+.form > form > label > input.error {
+  border-color: #cc0000;
+  margin-bottom: 5px;
+}
+.form > form > label > input:focus {
+  outline: none;
+}
+.form > form > label input::-webkit-outer-spin-button,
+.form > form > label input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+.form > form > label p {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+.form > form > label p.error {
+  color: #cc0000;
 }
 .form > form > .contactme:after {
   content: "";
@@ -1827,6 +1851,7 @@ nav > .social > ul > li > a.youtube::before {
   border-style: none;
   display: block;
   margin: 0 auto;
+  outline: none;
 }
 .form > form > input[type="submit"]:hover {
   background-color: #6aa336;
@@ -1835,4 +1860,10 @@ nav > .social > ul > li > a.youtube::before {
   .form > form > input[type="submit"] {
     margin: 0;
   }
+}
+.form > form > input[type="submit"].sucesso {
+  background-color: #009c41;
+}
+.form > form > input[type="number"] {
+  -moz-appearance: textfield;
 }
