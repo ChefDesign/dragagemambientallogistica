@@ -1838,7 +1838,7 @@ nav > .social > ul > li > a.youtube::before {
   margin-left: 5px;
   margin-right: 10px;
 }
-.form > form > input[type="submit"] {
+.form > form > button[type="submit"] {
   display: inline-block;
   border-radius: 20px;
   padding: 10px 20px;
@@ -1853,15 +1853,15 @@ nav > .social > ul > li > a.youtube::before {
   margin: 0 auto;
   outline: none;
 }
-.form > form > input[type="submit"]:hover {
+.form > form > button[type="submit"]:hover {
   background-color: #6aa336;
 }
 @media (min-width: 48em) {
-  .form > form > input[type="submit"] {
+  .form > form > button[type="submit"] {
     margin: 0;
   }
 }
-.form > form > input[type="submit"].sucesso {
+.form > form > button[type="submit"].sucesso {
   background-color: #009c41;
 }
 .form > form > input[type="number"] {
