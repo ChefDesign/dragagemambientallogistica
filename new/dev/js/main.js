@@ -102,7 +102,7 @@ var Ambiental = {
     });
   },
   /**
-   * jqueryValidation
+   * jqueryValidationMobile
    * @access public
    * @desc mobile form validation
    *
@@ -184,13 +184,13 @@ var Ambiental = {
     });
   },
   /**
-   * jqueryValidation
+   * jqueryValidationDesktop
    * @access public
    * @desc desktop form validation
    *
    * @return {Void}
    */
-  jqueryValidationDeskop: function() {
+  jqueryValidationDesktop: function() {
     'use strict';
 
     var botaoEnviarDesktop = $('#btnDesktop'),
