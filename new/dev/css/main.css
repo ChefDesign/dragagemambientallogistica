@@ -978,11 +978,11 @@ nav > .social > ul > li > a.youtube::before {
     font-size: 14px;
   }
 }
-.contacts > div > .gmaps {
+.contacts > div > .maps {
   display: none;
 }
 @media (min-width: 62em) {
-  .contacts > div > .gmaps {
+  .contacts > div > .maps {
     display: inline-block;
     border-radius: 20px;
     padding: 10px 20px;
@@ -993,13 +993,13 @@ nav > .social > ul > li > a.youtube::before {
     background-color: #ed1c24;
     cursor: pointer;
   }
-  .contacts > div > .gmaps:hover {
+  .contacts > div > .maps:hover {
     background-color: #d51920;
   }
-  .contacts > div > .gmaps > span::before {
+  .contacts > div > .maps > span::before {
     content: "\e905";
   }
-  .contacts > div > .gmaps > span::before {
+  .contacts > div > .maps > span::before {
     font-family: 'dragagem-icons' !important;
     speak: none;
     font-style: normal;
