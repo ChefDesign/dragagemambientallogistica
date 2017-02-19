@@ -804,16 +804,6 @@ nav > .social > ul > li > a.youtube::before {
   display: table;
   clear: both;
 }
-@media (min-width: 48em) {
-  .contacts > div {
-    padding: 20px;
-  }
-}
-@media (min-width: 62em) {
-  .contacts > div {
-    padding: 40px;
-  }
-}
 .contacts > div > img {
   display: none;
 }
