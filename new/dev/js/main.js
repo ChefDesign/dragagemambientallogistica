@@ -97,8 +97,29 @@ var Ambiental = {
   selectForm: function() {
     'use strict';
 
+    var selected = 1;
+
     $('.wrap').click(function() {
-      $(this).children('.checkbox').toggleClass('-selected');
+      var value = $(this).children('p').text();
+      var hiddenInput = $('<input/>', {
+        type: 'hidden',
+        name: value,
+        value: value
+      });
+
+      if ($(this).children('.checkbox').hasClass('-selected')) {
+        if (selected <= 1) {
+          return false;
+        } else {
+          $(this).children('.checkbox').removeClass('-selected');
+          $(this).find('input').remove();
+          selected -= 1;
+        }
+      } else {
+        $(this).children('.checkbox').addClass('-selected');
+        hiddenInput.appendTo($(this));
+        selected += 1;
+      }
     });
   },
   /**
@@ -166,12 +187,12 @@ var Ambiental = {
             setTimeout(function() {
               botaoEnviarMobile.addClass('sucesso').text('Obrigado pelo contato');
 
+              $('#name, #email, #phone').val('');
+
               setTimeout(function() {
                 botaoEnviarMobile.removeClass('sucesso').text('Solicitar proposta');
               }, 2000);
             }, 2000);
-
-            $('#name, #email, #phone').val('');
           },
           error: function(xhr, ajaxOptions, thrownError) {
             console.log(xhr.status);
@@ -248,12 +269,12 @@ var Ambiental = {
             setTimeout(function() {
               botaoEnviarDesktop.addClass('sucesso').text('Obrigado pelo contato');
 
+              Ambiental.resetForm();
+
               setTimeout(function() {
                 botaoEnviarDesktop.removeClass('sucesso').text('Solicitar proposta');
               }, 2000);
             }, 2000);
-
-            $('#name, #email, #phone').val('');
           },
           error: function(xhr, ajaxOptions, thrownError) {
             console.log(xhr.status);
@@ -264,6 +285,36 @@ var Ambiental = {
         return false;
       }
     });
+  },
+  /**
+   * resetForm
+   * @access public
+   * @desc reseting form
+   *
+   * @return {Void}
+   */
+  resetForm: function() {
+    'use strict';
+
+    var selecteds = $('.wrap').children('.checkbox');
+    var inputsToRemove = $('.wrap').children('input');
+    var selectedDefault = $('.contactme').find('div:first');
+    var hiddenInput = $('<input/>', {
+        type: 'hidden',
+        name: 'E-mail',
+        value: 'E-mail'
+      });
+
+    // reseting inputs
+    $('#name, #email, #phone').val('');
+
+    // reseting contactme
+    selecteds.removeClass('-selected');
+    inputsToRemove.remove();
+
+    // initializing contactme
+    selectedDefault.find('span').addClass('-selected');
+    hiddenInput.appendTo(selectedDefault);
   }
 }
 
