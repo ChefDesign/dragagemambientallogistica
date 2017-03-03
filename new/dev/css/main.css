@@ -198,6 +198,14 @@ body > .full.navigation.sticky {
     border-style: none;
   }
 }
+body > .full.estimate.inServices {
+  background-color: #e6f7da;
+}
+@media (min-width: 48em) {
+  body > .full.estimate.inServices {
+    border-style: none;
+  }
+}
 body > .full.video {
   background-color: #e6f7da;
 }
@@ -706,6 +714,10 @@ nav > .social > ul > li > a.youtube::before {
 .cover.inCompany > .border > .banner > .info > a {
   background-color: #76b53c;
   color: #fff;
+}
+.cover.inServices > .border > .banner > .info > h2 {
+  line-height: 120%;
+  margin-bottom: 0;
 }
 .social {
   text-align: center;
@@ -1507,6 +1519,13 @@ nav > .social > ul > li > a.youtube::before {
 .estimate.inCompany > section > a {
   background-color: #009c41;
 }
+.estimate.inServices > section {
+  border-style: none;
+  background-color: transparent;
+}
+.estimate.inServices > section > a {
+  background-color: #009c41;
+}
 .video > div {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1612,7 +1631,6 @@ nav > .social > ul > li > a.youtube::before {
   max-width: 1000px;
   padding: 20px;
   margin: 0 auto;
-  /*border-bottom: 1px solid #ccc;*/
 }
 @media (min-width: 48em) {
   .about {
@@ -1693,6 +1711,61 @@ nav > .social > ul > li > a.youtube::before {
   .team > p {
     font-size: 18px;
   }
+}
+.services {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.services:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 48em) {
+  .services {
+    padding: 40px;
+  }
+}
+@media (min-width: 62em) {
+  .services {
+    padding: 60px;
+  }
+}
+@media (min-width: 48em) {
+  .services > ul {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 20px;
+  }
+  .services > ul:first-child {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 62em) {
+  .services > ul {
+    padding-left: 30px;
+  }
+  .services > ul:first-child {
+    padding-right: 30px;
+  }
+}
+.services > ul > li {
+  border-left: 3px solid #009c41;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+}
+.services > ul > li:first-child {
+  margin-top: 0;
 }
 .contactus {
   -webkit-box-sizing: border-box;
