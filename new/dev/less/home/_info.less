@@ -71,7 +71,7 @@
 						float: left;
 						margin-right: 10px;
 
-						&.about {
+						&.company {
 							.icon(@icon-boat, 18px);
 						}
 						&.services {
@@ -131,6 +131,38 @@
 					.tablet({
 						width: 50%;
 					});
+				}
+			}
+		}
+	}
+	&.inCompany{
+		> div {
+			> .item {
+				width: 50%;
+				float: left;
+
+				> .content {
+					&.noBorder {
+						border-style: none;
+					}
+					> header {
+						> .icon {
+							background-color: @color-primary;
+
+							&.committed {
+								.icon(@icon-handshake, 18px);
+							}
+							&.creative {
+								.icon(@icon-target, 18px);
+							}
+							&.excellence {
+								.icon(@icon-results);
+							}
+							&.inlove {
+								.icon(@icon-smile, 18px);
+							}
+						}
+					}
 				}
 			}
 		}

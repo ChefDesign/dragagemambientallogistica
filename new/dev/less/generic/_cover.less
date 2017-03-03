@@ -67,7 +67,6 @@
 					});
 					.tablet({
 						font-size: 24px;
-						margin-bottom: 20px;
 					});
 					.desktop({
 						font-size: 30px;
@@ -81,13 +80,25 @@
 				}
 				> a {
 					.btn(#f9f1d7, @color-dark);
-
-					.desktop({
-						margin-top: 20px;
-					});
 				}
 			}
 		}
 	}
-
+	&.inCompany {
+		> .border {
+			> .banner {
+				> .info {
+					> h2 {
+						> span {
+							color: @color-secondary;
+						}
+					}
+					> a {
+						background-color: @color-secondary;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
 }

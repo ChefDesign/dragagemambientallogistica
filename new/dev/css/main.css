@@ -129,8 +129,8 @@ table {
 }
 @font-face {
   font-family: 'dragagem-icons';
-  src: url('../../assets/fonts/dragagem.eot?cs4zlx');
-  src: url('../../assets/fonts/dragagem.eot?cs4zlx#iefix') format('embedded-opentype'), url('../../assets/fonts/dragagem.ttf?cs4zlx') format('truetype'), url('../../assets/fonts/dragagem.woff?cs4zlx') format('woff'), url('../../assets/fonts/dragagem.svg?cs4zlx#remoto-icons') format('svg');
+  src: url('../../assets/fonts/dragagem.eot?881wbj');
+  src: url('../../assets/fonts/dragagem.eot?881wbj#iefix') format('embedded-opentype'), url('../../assets/fonts/dragagem.ttf?881wbj') format('truetype'), url('../../assets/fonts/dragagem.woff?881wbj') format('woff'), url('../../assets/fonts/dragagem.svg?881wbj#remoto-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -192,6 +192,12 @@ body > .full.navigation.sticky {
     border-bottom: 1px solid #ccc;
   }
 }
+@media (min-width: 48em) {
+  body > .full.estimate.inCompany {
+    background-color: #fff;
+    border-style: none;
+  }
+}
 body > .full.video {
   background-color: #e6f7da;
 }
@@ -202,6 +208,11 @@ body > .full.contacts {
   body > .full.contacts.hideInTabletPropostas {
     display: none;
   }
+}
+body > .full.contacts.inCompany {
+  background-color: #f2f2f2;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 body > .full.footer {
   background-color: #333;
@@ -222,6 +233,9 @@ body > .full.apiMaps {
   body > .full.apiMaps {
     display: block;
   }
+}
+body > .full.team {
+  background-color: #cee6bf;
 }
 body .hidden {
   visibility: hidden;
@@ -643,7 +657,6 @@ nav > .social > ul > li > a.youtube::before {
 @media (min-width: 48em) {
   .cover > .border > .banner > .info > h2 {
     font-size: 24px;
-    margin-bottom: 20px;
   }
 }
 @media (min-width: 62em) {
@@ -687,10 +700,12 @@ nav > .social > ul > li > a.youtube::before {
 .cover > .border > .banner > .info > a:hover {
   background-color: #e0d9c2;
 }
-@media (min-width: 62em) {
-  .cover > .border > .banner > .info > a {
-    margin-top: 20px;
-  }
+.cover.inCompany > .border > .banner > .info > h2 > span {
+  color: #76b53c;
+}
+.cover.inCompany > .border > .banner > .info > a {
+  background-color: #76b53c;
+  color: #fff;
 }
 .social {
   text-align: center;
@@ -1229,10 +1244,10 @@ nav > .social > ul > li > a.youtube::before {
   float: left;
   margin-right: 10px;
 }
-.info > div > .item > .content > header > .icon.about::before {
+.info > div > .item > .content > header > .icon.company::before {
   content: "\e900";
 }
-.info > div > .item > .content > header > .icon.about::before {
+.info > div > .item > .content > header > .icon.company::before {
   font-family: 'dragagem-icons' !important;
   speak: none;
   font-style: normal;
@@ -1348,6 +1363,84 @@ nav > .social > ul > li > a.youtube::before {
     width: 50%;
   }
 }
+.info.inCompany > div > .item {
+  width: 50%;
+  float: left;
+}
+.info.inCompany > div > .item > .content.noBorder {
+  border-style: none;
+}
+.info.inCompany > div > .item > .content > header > .icon {
+  background-color: #009c41;
+}
+.info.inCompany > div > .item > .content > header > .icon.committed::before {
+  content: "\e90e";
+}
+.info.inCompany > div > .item > .content > header > .icon.committed::before {
+  font-family: 'dragagem-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+  text-align: center;
+  vertical-align: middle;
+}
+.info.inCompany > div > .item > .content > header > .icon.creative::before {
+  content: "\e911";
+}
+.info.inCompany > div > .item > .content > header > .icon.creative::before {
+  font-family: 'dragagem-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+  text-align: center;
+  vertical-align: middle;
+}
+.info.inCompany > div > .item > .content > header > .icon.excellence::before {
+  content: "\e90f";
+}
+.info.inCompany > div > .item > .content > header > .icon.excellence::before {
+  font-family: 'dragagem-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16;
+  text-align: center;
+  vertical-align: middle;
+}
+.info.inCompany > div > .item > .content > header > .icon.inlove::before {
+  content: "\e910";
+}
+.info.inCompany > div > .item > .content > header > .icon.inlove::before {
+  font-family: 'dragagem-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+  text-align: center;
+  vertical-align: middle;
+}
 .estimate {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1406,6 +1499,13 @@ nav > .social > ul > li > a.youtube::before {
 }
 .estimate > section > a:hover {
   background-color: #6aa336;
+}
+.estimate.inCompany > section {
+  border-style: none;
+  background-color: #fff;
+}
+.estimate.inCompany > section > a {
+  background-color: #009c41;
 }
 .video > div {
   -webkit-box-sizing: border-box;
@@ -1503,6 +1603,96 @@ nav > .social > ul > li > a.youtube::before {
 }
 .client > .logos > .all > img {
   width: 100%;
+}
+.about {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+  margin: 0 auto;
+  /*border-bottom: 1px solid #ccc;*/
+}
+@media (min-width: 48em) {
+  .about {
+    padding: 40px 40px 0 40px;
+  }
+}
+@media (min-width: 62em) {
+  .about {
+    padding: 60px 60px 0 60px;
+  }
+}
+.about > p:first-child {
+  margin-bottom: 20px;
+}
+.team {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (min-width: 48em) {
+  .team {
+    padding: 40px;
+  }
+}
+@media (min-width: 62em) {
+  .team {
+    padding: 60px;
+  }
+}
+.team > .icon::before {
+  content: "\e912";
+}
+.team > .icon::before {
+  font-family: 'dragagem-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 75px;
+  text-align: center;
+  vertical-align: middle;
+}
+.team > h1 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media (min-width: 48em) {
+  .team > h1 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 62em) {
+  .team > h1 {
+    font-size: 20px;
+  }
+}
+.team > p {
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 150%;
+}
+@media (min-width: 48em) {
+  .team > p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 62em) {
+  .team > p {
+    font-size: 18px;
+  }
 }
 .contactus {
   -webkit-box-sizing: border-box;

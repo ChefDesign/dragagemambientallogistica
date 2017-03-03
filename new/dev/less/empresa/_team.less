@@ -1,0 +1,43 @@
+.team {
+	.box-sizing();
+	width: 100%;
+	padding: 20px;
+	margin: 0 auto;
+	text-align: center;
+
+	.tablet({
+		padding: 40px;
+	});
+	.desktop({
+		padding: 60px;
+	});
+
+	> .icon {
+		.icon(@icon-worker, 75px);
+	}
+	> h1 {
+		font-size: 16px;
+		font-weight: bold;
+		margin-top: 10px;
+		margin-bottom: 10px;
+
+		.tablet({
+			font-size: 18px;
+		});
+		.desktop({
+			font-size: 20px;
+		});
+	}
+	> p {
+		max-width: 500px;
+		margin: 0 auto;
+		line-height: 150%;
+
+		.tablet({
+			font-size: 16px;
+		});
+		.desktop({
+			font-size: 18px;
+		});
+	}
+}
