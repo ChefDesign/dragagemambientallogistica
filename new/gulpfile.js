@@ -99,6 +99,52 @@ gulp.task('index', function() {
 		.pipe(gulp.dest('production'))
 });
 
+gulp.task('empresa', function() {
+	return gulp.src('empresa.html')
+		.pipe(deleteLines({
+			'filters': [
+				/<link\s+rel=/i
+			]
+		}))
+		.pipe(insertLines({
+			'before': /<\/head>$/,
+			'lineBefore': '		<link rel="stylesheet" type="text/css" href="dist/css/main.min.css">',
+		}))
+		.pipe(deleteLines({
+			'filters': [
+				/<script\s+src=/i
+			]
+		}))
+		.pipe(insertLines({
+			'before': /<\/body>$/,
+			'lineBefore': '		<script src="dist/js/main.min.js"></script>'
+		}))
+		.pipe(gulp.dest('production'))
+});
+
+gulp.task('servicos', function() {
+	return gulp.src('servicos.html')
+		.pipe(deleteLines({
+			'filters': [
+				/<link\s+rel=/i
+			]
+		}))
+		.pipe(insertLines({
+			'before': /<\/head>$/,
+			'lineBefore': '		<link rel="stylesheet" type="text/css" href="dist/css/main.min.css">',
+		}))
+		.pipe(deleteLines({
+			'filters': [
+				/<script\s+src=/i
+			]
+		}))
+		.pipe(insertLines({
+			'before': /<\/body>$/,
+			'lineBefore': '		<script src="dist/js/main.min.js"></script>'
+		}))
+		.pipe(gulp.dest('production'))
+});
+
 gulp.task('propostas', function() {
 	return gulp.src('propostas.html')
 		.pipe(deleteLines({
@@ -127,4 +173,4 @@ gulp.task('assets', function() {
 		.pipe(gulp.dest('production/assets'))
 });
 
-gulp.task('production', ['css','js', 'index', 'propostas', 'assets']);
+gulp.task('production', ['css','js', 'index', 'empresa', 'servicos', 'propostas', 'assets']);
